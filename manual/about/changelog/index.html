@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.trackerboy.org/manual/about/changelog/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Change log - Trackerboy</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Trackerboy</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../faq/" class="nav-link">FAQ</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interface <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../interface/" class="dropdown-item">Overview</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Configuration</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../interface/configuration/general/" class="dropdown-item">General</a>
+</li>
+            
+<li>
+    <a href="../../interface/configuration/appearance/" class="dropdown-item">Appearance</a>
+</li>
+            
+<li>
+    <a href="../../interface/configuration/keyboard/" class="dropdown-item">Keyboard</a>
+</li>
+            
+<li>
+    <a href="../../interface/configuration/sound/" class="dropdown-item">Sound / Midi</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Menus</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../interface/menus/file/" class="dropdown-item">File</a>
+</li>
+            
+<li>
+    <a href="../../interface/menus/edit/" class="dropdown-item">Edit</a>
+</li>
+            
+<li>
+    <a href="../../interface/menus/module/" class="dropdown-item">Module</a>
+</li>
+            
+<li>
+    <a href="../../interface/menus/song/" class="dropdown-item">Song</a>
+</li>
+            
+<li>
+    <a href="../../interface/menus/instruments/" class="dropdown-item">Instruments</a>
+</li>
+            
+<li>
+    <a href="../../interface/menus/waveforms/" class="dropdown-item">Waveforms</a>
+</li>
+            
+<li>
+    <a href="../../interface/menus/tracker/" class="dropdown-item">Tracker</a>
+</li>
+            
+<li>
+    <a href="../../interface/menus/view/" class="dropdown-item">View</a>
+</li>
+            
+<li>
+    <a href="../../interface/menus/help/" class="dropdown-item">Help</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../interface/toolbars/" class="dropdown-item">Toolbars</a>
+</li>
+                                    
+<li>
+    <a href="../../interface/sidebar/" class="dropdown-item">Sidebar</a>
+</li>
+                                    
+<li>
+    <a href="../../interface/pattern-editor/" class="dropdown-item">Pattern editor</a>
+</li>
+                                    
+<li>
+    <a href="../../interface/instruments-waveforms/" class="dropdown-item">Instruments/Waveforms panel</a>
+</li>
+                                    
+<li>
+    <a href="../../interface/instrument-editor/" class="dropdown-item">Instrument editor</a>
+</li>
+                                    
+<li>
+    <a href="../../interface/waveform-editor/" class="dropdown-item">Waveform editor</a>
+</li>
+                                    
+<li>
+    <a href="../../interface/module-properties/" class="dropdown-item">Module properties</a>
+</li>
+                                    
+<li>
+    <a href="../../interface/comments/" class="dropdown-item">Comments</a>
+</li>
+                                    
+<li>
+    <a href="../../interface/history/" class="dropdown-item">History</a>
+</li>
+                                    
+<li>
+    <a href="../../interface/tempo-calculator/" class="dropdown-item">Tempo Calculator</a>
+</li>
+                                    
+<li>
+    <a href="../../interface/shortcuts/" class="dropdown-item">Shortcuts</a>
+</li>
+                                    
+<li>
+    <a href="../../interface/statusbar/" class="dropdown-item">Status bar</a>
+</li>
+                                    
+<li>
+    <a href="../../interface/audio-diagnostics/" class="dropdown-item">Audio diagnostics</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tracker <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../tracker/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../tracker/glossary/" class="dropdown-item">Glossary</a>
+</li>
+                                    
+<li>
+    <a href="../../tracker/octave-range/" class="dropdown-item">Octave range and notes</a>
+</li>
+                                    
+<li>
+    <a href="../../tracker/channel-lock/" class="dropdown-item">Channel locking</a>
+</li>
+                                    
+<li>
+    <a href="../../tracker/speed/" class="dropdown-item">Speed/Tempo</a>
+</li>
+                                    
+<li>
+    <a href="../../tracker/instruments/" class="dropdown-item">Instruments</a>
+</li>
+                                    
+<li>
+    <a href="../../tracker/effect-list/" class="dropdown-item">Effect list</a>
+</li>
+                                    
+<li>
+    <a href="../../tracker/sfx/" class="dropdown-item">Sound effects (TBD)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Hardware Primer <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../hardware/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../hardware/pulse-channel/" class="dropdown-item">Pulse channel</a>
+</li>
+                                    
+<li>
+    <a href="../../hardware/wave-channel/" class="dropdown-item">Wave channel</a>
+</li>
+                                    
+<li>
+    <a href="../../hardware/noise-channel/" class="dropdown-item">Noise channel</a>
+</li>
+                                    
+<li>
+    <a href="../../hardware/sweep/" class="dropdown-item">Frequency sweep</a>
+</li>
+                                    
+<li>
+    <a href="../../hardware/volume-control/" class="dropdown-item">Volume control and panning</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../roadmap/" class="dropdown-item">Roadmap</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Change log</a>
+</li>
+                                    
+<li>
+    <a href="../license/" class="dropdown-item">License</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../roadmap/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../license/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/stoneface86/trackerboy/edit/master/docs/about/changelog.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#unreleased" class="nav-link">[Unreleased]</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#050-2021-09-10" class="nav-link">[0.5.0] - 2021-09-10</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#040-2021-07-07" class="nav-link">[0.4.0] - 2021-07-07</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#031-2021-06-23" class="nav-link">[0.3.1] - 2021-06-23</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#030-2021-06-22" class="nav-link">[0.3.0] - 2021-06-22</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#020-2021-06-15" class="nav-link">[0.2.0] - 2021-06-15</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#010-2020-09-20" class="nav-link">[0.1.0] - 2020-09-20</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#006-2020-08-09" class="nav-link">[0.0.6] - 2020-08-09</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#005-2020-04-24" class="nav-link">[0.0.5] - 2020-04-24</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#004-2020-04-01" class="nav-link">[0.0.4] - 2020-04-01</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#003-2020-03-09" class="nav-link">[0.0.3] - 2020-03-09</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#002-2020-02-05" class="nav-link">[0.0.2] - 2020-02-05</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#001-2020-02-01" class="nav-link">[0.0.1] - 2020-02-01</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="unreleased">[Unreleased]</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Command line argument parsing, you can now open a module on application startup</li>
+<li>General tab in Config dialog for changing basic settings.</li>
+<li>Appearance tab in Config dialog for changing fonts, colors and other settings</li>
+<li>Keyboard tab in Config dialog for changing keyboard layout and editing keybinds,
+   as well as shortcut key sequences.</li>
+<li>Colors for the audio scope and graph editors are now customizable</li>
+<li>Autosave. Disabled by default, enable in the General tab in Config.</li>
+<li>Jxy effect for setting the global volume scale.</li>
+<li>Menu action in Tracker for reseting the global volume (Tracker|Reset global volume)</li>
+<li>Context menu for pattern editor</li>
+<li>Action for replacing all selected instrument columns with the current instrument
+   (Edit|Replace instrument)</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Combined the Sound and Midi tabs in the Configuration dialog (Sound + MIDI)</li>
+<li>AZERTY keyboard layout uses French AZERTY</li>
+<li>QWERTZ keyboard layout uses German T3</li>
+<li>CascadiaMono is no longer the default font</li>
+<li>(Windows) Consolas is now the default font, falling back to Courier New if not available</li>
+<li>No longer using dock widgets, Instruments + Waveforms are now located to
+   the right of the pattern editor.</li>
+<li>Pattern editor row numbers can be displayed in decimal (default is hexadecimal)</li>
+<li>Cursor wrap can now be disabled in General settings</li>
+<li>Hxx effect (set sweep register) now works.</li>
+<li>Crash save filename no longer using colons in the timestamp (this resulted
+   in using an illegal filename on windows).</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Issue with Instrument Editor not properly updating when changing instruments</li>
+<li>Hitting enter in the sequence editor line edit opens the Wave editor</li>
+<li>Bug when saving a new module overwrites the last opened one instead of prompting
+   the user for a new location.</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Synthesizer quality setting in Sound configuration</li>
+</ul>
+<h2 id="050-2021-09-10">[0.5.0] - 2021-09-10</h2>
+<h3 id="added_1">Added</h3>
+<ul>
+<li>Instrument + Waveform list views for selecting/adding instruments/waveforms</li>
+<li>Effect columns can now be hidden/added for each track</li>
+<li>Multiple song support, modules can now store 1-256 songs</li>
+<li>Backwards compatibilty for 0.0 (Rev A) modules</li>
+<li>Tempo calculator dialog (Song &gt; Tempo calculator...)</li>
+<li>Crash handler. Attempts to save a copy of the module after a fatal error</li>
+<li>Module properties dialog for editing the song list, module information and
+   framerate/system.</li>
+<li>Song next/previous actions for changing the current song</li>
+<li>Song selector in Sidebar for selecting the current song</li>
+<li>Comments dialog for editing module comments</li>
+<li>File menu now shows a list of recently opened/saved modules</li>
+</ul>
+<h3 id="changed_1">Changed</h3>
+<ul>
+<li>Back to using miniaudio instead of RtAudio for audio playback</li>
+<li>Trackerboy is now SDI instead of MDI (only one module can be open at a time).</li>
+<li>Initial window size is set to a maximum of 1280x720</li>
+<li>Module file format is now at 1.0 (Rev B)</li>
+<li>Config file is now more human friendly</li>
+<li>Redesigned header for the pattern editor</li>
+<li>Reduced spacing between columns in pattern editor</li>
+<li>Rewrote OrderEditor using a custom widget instead of QTableView + OrderModel</li>
+<li>Instrument and Waveform editors are now dialogs instead of docks.</li>
+<li>Octave decrease/increase shortcut changed from numpad / * to Ctrl+[ and Ctrl+]</li>
+</ul>
+<h3 id="fixed_1">Fixed</h3>
+<ul>
+<li>issue #2 - Exx not taking immediate effect (also fixes V0x and I0x not
+              taking immediate effect as well)</li>
+<li>issue #3 - PulseAudio hang</li>
+</ul>
+<h3 id="removed_1">Removed</h3>
+<ul>
+<li>Module tree view (replaced by instrument and waveform docks)</li>
+<li>Instrument select toolbar (functionality replaced by selecting an instrument
+   in the instruments dock)</li>
+<li>Patterns and Tempo spinboxes in Song settings editor</li>
+</ul>
+<h2 id="040-2021-07-07">[0.4.0] - 2021-07-07</h2>
+<h3 id="added_2">Added</h3>
+<ul>
+<li>MIDI support. You can now use a MIDI input device to input notes / preview instruments</li>
+<li>Order editor has increment/decrement and set operations again</li>
+<li>Oscilloscope visualizer</li>
+<li>Icons for cut/copy/paste</li>
+</ul>
+<h3 id="changed_2">Changed</h3>
+<ul>
+<li>32-bit builds are now supported</li>
+<li>Using RtAudio instead of miniaudio for audio playback</li>
+<li>Some improvements to the audio diagnostics dialog</li>
+<li>Fxx effect changes the speed immediately now (previously it only took effect on the next row)</li>
+<li>Status bar is now updated with speed/tempo, time elapsed and position of
+   current song being played.</li>
+<li>Cursor row is locked when playing in follow-mode</li>
+<li>Selecting an order while playing in follow-mode jumps to it</li>
+</ul>
+<h3 id="fixed_2">Fixed</h3>
+<ul>
+<li>Crash when creating new module on linux</li>
+<li>Copy/Paste bugs when copying effect columns</li>
+</ul>
+<h2 id="031-2021-06-23">[0.3.1] - 2021-06-23</h2>
+<h3 id="changed_3">Changed</h3>
+<ul>
+<li>Play and stop shortcut only triggers when pattern editor has focus</li>
+</ul>
+<h3 id="fixed_3">Fixed</h3>
+<ul>
+<li>Note previews not working right on CH4</li>
+<li>Current track not updating in order editor</li>
+</ul>
+<h2 id="030-2021-06-22">[0.3.0] - 2021-06-22</h2>
+<h3 id="added_3">Added</h3>
+<ul>
+<li>Note previews when inputting notes in the pattern editor</li>
+<li>Pattern repeat mode</li>
+<li>Step mode playback</li>
+<li>Input toolbar (set the octave and edit step)</li>
+<li>Instrument toolbar (combobox for the current instrument)</li>
+<li>Song menu, contains actions for adding/removing orders</li>
+<li>Sidebar widget, combines song settings + order editor</li>
+<li>Icon for configuration</li>
+<li>Keybinds for tracker actions (play, stop, etc)</li>
+<li>Add "play and stop" shortcut (pressing enter plays, pressing it again stops)</li>
+</ul>
+<h3 id="changed_4">Changed</h3>
+<ul>
+<li>No longer need to have record mode on when deleting, transposing, etc
+   (record mode now only applies to setting notes, instruments and effects)</li>
+<li>Arpeggio editor graph is now centered at 0</li>
+<li>Moved stuff from PatternEditor to separate toolbars</li>
+<li>Renamed Delete action in Edit menu to Erase</li>
+<li>View menu is now between Tracker and Window</li>
+<li>Fix "set volume on trigger" checkbox not updating when changing instruments</li>
+<li>Fix pattern previews not showing up on module load</li>
+<li>Fix order move up/down actions not disabling/enabling when user changes patterns</li>
+<li>Setting a note cut does not set the instrument column</li>
+</ul>
+<h3 id="removed_2">Removed</h3>
+<ul>
+<li>PatternEditor toolbar (now is part of the main application toolbar)</li>
+<li>Order increment/decrement and set controls</li>
+</ul>
+<h2 id="020-2021-06-15">[0.2.0] - 2021-06-15</h2>
+<p>The project has changed dramatically since the last release so changes will
+not be listed for this version.</p>
+<p>Here's a quick list of features:</p>
+<ul>
+<li>Open/save modules, can have multiple modules open at once</li>
+<li>Edit pattern data via keyboard (OpenMPT style keybindings, will be configurable in later versions)</li>
+<li>Transpose selection by note/octave or by a custom semitone offset (Ctrl+T)</li>
+<li>Reverse selected rows (Ctrl+R)</li>
+<li>Cut/Copy/Paste pattern data using system clipboard</li>
+<li>Mix paste (only the unset columns get set to the pasted data)</li>
+<li>Move pattern data via drag n drop</li>
+<li>Music playback, pattern cursor follows the current playing row</li>
+<li>Edit waveforms visually via a graph control, by selecting a preset or by manually entering waveram data</li>
+<li>Edit instrument sequences visually</li>
+<li>Instruments and Waveforms can be previewed using the piano control (or by keyboard).</li>
+<li>Undo/Redo functionality for song order and pattern editing.</li>
+<li>Audio diagnostics dialog (Help &gt; Audio Diagnostics) for debugging sound output / buffer issues.</li>
+</ul>
+<h2 id="010-2020-09-20">[0.1.0] - 2020-09-20</h2>
+<h3 id="added_4">Added</h3>
+<ul>
+<li>The main UI has been started</li>
+<li>Wave editor dialog, user can edit waveforms and preview them using a piano control</li>
+<li>Configuration dialog, user can select an audio device, set buffer size and volume</li>
+<li>Instrument editor dialog</li>
+<li>DeviceManager and DeviceTable classes in the audio library</li>
+<li>demo_device_manager demo lists all available host api and output devices</li>
+</ul>
+<h3 id="changed_5">Changed</h3>
+<ul>
+<li>PlaybackQueue can use any portaudio device instead of the default one</li>
+<li>Reorganized library header folders</li>
+<li>MusicRuntime only updates "locked" channels</li>
+<li>Rewrote Engine class to use MusicRuntime class</li>
+</ul>
+<h3 id="removed_3">Removed</h3>
+<ul>
+<li>File class</li>
+<li>Old ui code (instedit)</li>
+</ul>
+<h2 id="006-2020-08-09">[0.0.6] - 2020-08-09</h2>
+<h3 id="added_5">Added</h3>
+<ul>
+<li>song_demo, demonstrates playback of a Song</li>
+<li>Engine class, handles playback for Songs and sound effects</li>
+<li>FrequencyControl, frequency effect logic for channels 1, 2 and 3</li>
+<li>Note lookup table for channel 4, NOTE_NOISE_TABLE</li>
+<li>MusicRuntime, handles song playback (replaces SongRuntime + PatternRutime + TrackRuntime)</li>
+<li>NoteControl, handles note triggers and cuts with an optional delay.</li>
+<li>PatternCursor, utility class for random access/iteration of a Pattern</li>
+<li>RuntimeContext struct, utility struct containing Synth and Table references</li>
+<li>Timer class, used for tempo/speed</li>
+</ul>
+<h3 id="changed_6">Changed</h3>
+<ul>
+<li>Fixed warnings for ubuntu build</li>
+<li>Mixer no longer uses sigma approximation when calculating the STEP_TABLE, this was done as
+   an experiment and also worked as a low pass filter. Filtering will be done elsewhere in the future.</li>
+<li>added utility method Synth::setFrequency</li>
+<li>added several new effects. Effects are now categorized by pattern, track and frequency.</li>
+</ul>
+<h3 id="removed_4">Removed</h3>
+<ul>
+<li>InstrumentRuntime, TrackRuntime, PatternRuntime and SongRuntime classes. These are being replaced
+   with the newly added classes in the engine folder.</li>
+<li>Q53.hpp, replaced by Speed.hpp</li>
+</ul>
+<h2 id="005-2020-04-24">[0.0.5] - 2020-04-24</h2>
+<h3 id="added_6">Added</h3>
+<ul>
+<li>PatternMaster class, container for all tracks in a Song</li>
+<li>Synth::reset() and for all APU components also</li>
+</ul>
+<h3 id="changed_7">Changed</h3>
+<ul>
+<li>Instruments are now a sequence of commands, 1 command per frame</li>
+<li>All runtime classes have been rewritten to use the new pattern format</li>
+<li>Song serialization has been rewritten to use new pattern format</li>
+<li>File format signature changed so that it starts with a non-printable character</li>
+<li>TrackRuntime and InstrumentRuntime are now template classes</li>
+<li>Patterns function like FamiTracker's, a pattern is a combination of resuable track data</li>
+<li>Pattern is now a tuple of Track references</li>
+<li>Order is now a POD struct of track ids, one for each channel</li>
+<li>Track no longer behaves like an iterator and now contains data</li>
+<li>pattern demo now plays a recreation of national park from pokemon G/S/C</li>
+<li>implemented writeAll method in PlaybackQueue</li>
+<li>PlaybackQueue uses standard library for sleeping instead of using Pa_Sleep</li>
+<li>Synth methods now have noexcept and const qualifiers where applicable</li>
+<li>Fix issue in Wav writer, where the sample count in the fact chunk was
+   incorrect for multichannel data.</li>
+<li>The Mixer and Synth sampling rates can now be changed</li>
+<li>SongRuntime is now single-use, or, you can no longer set a new song</li>
+</ul>
+<h3 id="removed_5">Removed</h3>
+<ul>
+<li>Instruction struct, no longer needed</li>
+<li>PatternRuntime::reset()</li>
+</ul>
+<h2 id="004-2020-04-01">[0.0.4] - 2020-04-01</h2>
+<h3 id="added_7">Added</h3>
+<ul>
+<li>Wav class, for writing wav files (only supports 32-bit float format)</li>
+<li>Generator class, base class for PulseGen, WaveGen and NoiseGen</li>
+<li>PulseGen class, similar to the previously removed PulseChannel</li>
+<li>WaveGen class, similar to the previously removed WaveChannel</li>
+<li>Mixer class, adds bandlimited steps to left/right channels</li>
+<li>Sequencer class, similar to the previously removed one</li>
+</ul>
+<h3 id="changed_8">Changed</h3>
+<ul>
+<li>Minimum required C++ standard is now C++17</li>
+<li>PlaybackQueue uses float samples instead of int16_t</li>
+<li>Synth was rewritten to use emulation based synthesis, generates samples on
+   a per frame basis.</li>
+<li>Synth can now read and write APU registers</li>
+<li>reset() renamed to restart() in synth APU components</li>
+<li>setRegister renamed to writeRegister</li>
+<li>Sweep has its own shadow register and now longer uses the channel's on trigger
+   (this behavior now matches the hardware)</li>
+<li>Sweep and Envelope register contents get applied on restart</li>
+</ul>
+<h3 id="removed_6">Removed</h3>
+<ul>
+<li>include/trackerboy/synth/utils.hpp, no longer being used</li>
+<li>libtrackerboy/synth/test_Osc.cpp, was unused</li>
+<li>Osc, PulseOsc and WaveOsc, since we are now using emulation based synthesis</li>
+</ul>
+<h2 id="003-2020-03-09">[0.0.3] - 2020-03-09</h2>
+<h3 id="added_8">Added</h3>
+<ul>
+<li>More test cases for File</li>
+<li>tests for <code>Table&lt;T&gt;</code></li>
+<li>misc/genstep.py, similar to gensinc.py, generates bandlimited step sets for Osc</li>
+<li>implementation for WaveOsc</li>
+<li>NoiseGen, buffered version of NoiseChannel</li>
+<li>Envelope, moved code from EnvChannel here (will replace EnvChannel)</li>
+<li>Sweep class, replaces SweepPulseChannel</li>
+<li>HardwareFile struct (replaces ChannelFile)</li>
+</ul>
+<h3 id="changed_9">Changed</h3>
+<ul>
+<li>Fix exception being thrown when attempting to insert into table of size one less than maximum</li>
+<li>Rewrote Osc class. Subclasses must edit the delta buffer manually instead of
+   using <code>deltaSet</code>.</li>
+<li>Osc no longer uses sinc sets. It uses bandlimited steps instead, similiar to
+   blargg's http://www.slack.net/~ant/bl-synth/11.implementation.html. <code>Osc::generate</code>
+   uses floats for samples instead of int16_t. Samples range from -1.0-1.0, exceeding both
+   limits due to overshoot (so volume will need to be adjusted or clipping will occur).</li>
+<li>Mixer no longer emulates terminal volume/panning (tracker doesn't use it)</li>
+<li>Mixer works with sample buffers as opposed to individual samples from each channel</li>
+<li>Length counters are no longer emulated by the Synth</li>
+<li>Mixer and Sequencer were moved into Synth, as only the synth used these internally.</li>
+</ul>
+<h3 id="removed_7">Removed</h3>
+<ul>
+<li><code>Osc::deltaSet</code> as only WaveOsc needed this method</li>
+<li><code>Osc::setMute</code> and <code>Osc::muted</code>, replaced by <code>Osc::disable</code> and <code>Osc::disabled</code></li>
+<li>misc/gensinc.py no longer needed, replaced by genstep.py</li>
+<li>Channel, EnvChannel, PulseChannel, SweepPulseChannel, WaveChannel, NoiseChannel,
+    ChannelFile, Mixer and Sequencer classes</li>
+</ul>
+<h2 id="002-2020-02-05">[0.0.2] - 2020-02-05</h2>
+<h3 id="added_9">Added</h3>
+<ul>
+<li><code>File::loadTable&lt;T&gt;</code> method</li>
+<li>uint16_t overload for correctEndian</li>
+<li>Destructor and copy constructor to <code>Table&lt;T&gt;</code></li>
+<li><code>Table&lt;T&gt;::insert</code> methods</li>
+<li><code>Table&lt;T&gt;::clear</code></li>
+<li>Version struct + operator overloads</li>
+</ul>
+<h3 id="changed_10">Changed</h3>
+<ul>
+<li>Rewrote implementation for <code>Table&lt;T&gt;</code>, no longer uses <code>std::unordered_map</code>
+   Uses a vector for the item data, and a 256 uint8_t array that maps an id
+   to an index in the vector. Allowing for faster lookups but a slight
+   performance loss when removing items.</li>
+<li>Refactored pattern_demo.cpp and File.cpp to use new Table implementation</li>
+<li>table size is now a 2 byte field when saving/loading</li>
+<li>add setSpeed() overload to calculate speed from tempo/rpb settings. Song
+   no longer calculates speed when tempo or rpb is set.</li>
+</ul>
+<h3 id="removed_8">Removed</h3>
+<ul>
+<li><code>Table&lt;T&gt;::add</code>, <code>Table&lt;T&gt;::set</code>, as these methods are no longer needed as the
+   insert methods should be used instead.</li>
+</ul>
+<h2 id="001-2020-02-01">[0.0.1] - 2020-02-01</h2>
+<h3 id="added_10">Added</h3>
+<ul>
+<li>This CHANGELOG.md file to serve as a changelog for any new features, removals
+   deprecations and so on for the project as a whole.</li>
+</ul>
+<h3 id="changed_11">Changed</h3>
+<ul>
+<li>README.md, added a roadmap section to list planned features and the order
+   in which they are worked on.</li>
+<li>ORGANIZATION.md, added a guideline to use unix style newlines in all files</li>
+<li>CMakeLists.txt, updated project version to v0.0.1</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
