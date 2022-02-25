@@ -288,6 +288,18 @@
             
             <li class="nav-item" data-level="1"><a href="#sound-and-midi-configuration" class="nav-link">Sound and MIDI configuration</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#output-device" class="nav-link">Output device</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#output-settings" class="nav-link">Output settings</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#midi-input" class="nav-link">MIDI input</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -296,7 +308,50 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="sound-and-midi-configuration">Sound and MIDI configuration</h1>
-<p>This page is currently under construction.</p></div>
+<p>Here you can configure your output device and (optionally) MIDI input device.</p>
+<p><img alt="sound-config" src="../../img/config-sound.png" title="Sound configuration tab" /></p>
+<h2 id="output-device">Output device</h2>
+<p>Select the output device and API for sound output. The available APIs to
+choose from depends on your operating system.</p>
+<p>When changing the API the device combo will be repopulated with all available
+devices in that API. You can also refresh the device combo by clicking the
+<em>Rescan</em> button.</p>
+<p>If the API cannot be used, the message "API Unavailable" will be shown under
+the device combo box.</p>
+<h3 id="default-device">Default device</h3>
+<p>Every API has a "Default device" option in the device list. This option will
+use the API's definition of a default device. For some APIs, this allows for
+automatic stream routing (ie switching the default device during playback).</p>
+<h3 id="null-api">Null API</h3>
+<p>The Null API is available for every platform. This API contains one device, the
+null device, which outputs sound nowhere. You can use this device if you don't
+want sound to play out.</p>
+<h2 id="output-settings">Output settings</h2>
+<ul>
+<li><a name="buffer-size"><em>Buffer size</em></a> - sets the size, in milliseconds,
+   of the playback buffer. This setting determines the overall latency of the
+   output. 40 ms is the default setting. It is recommended that you increase
+   this setting if you get any underruns.</li>
+<li><a name="period"><em>Period</em></a> - this is the rate audio is generated and
+   queued in the buffer. It also determines how often the UI is updated. It is
+   recommended that the period is less than or equal to half the buffer size.
+   Lower values requires more CPU use, so increase this if lower utilization is
+   perferred. The default period is 5 ms.</li>
+<li><em>Samplerate</em> - the sample rate, in Hz, of the generated output. Output will
+   be resampled using a linear resampler if the configured device does not
+   support the sample rate. See <a href="https://miniaud.io/docs/manual/index.html#LinearResampling">here</a>
+   for more details on the resampler.</li>
+</ul>
+<h3 id="notes-on-latency">Notes on latency</h3>
+<p>Latency depends mainly on two things: the buffer size and the latency provided
+by the backend. Trackerboy will try to use the lowest latency possible for the
+configured device, which on WASAPI is usually 10 ms. You may need to configure
+your audio provider if a lower latency is desired, but for most cases the
+default is acceptable.</p>
+<h2 id="midi-input">MIDI input</h2>
+<p>Click the checkbox if you would like to enable MIDI input handling for note
+input. Similarly to the <a href="#output-device">output device</a>, select a backend and
+device to use. If you need to update the device combo click the <em>Rescan</em> button.</p></div>
             </div>
         </div>
 

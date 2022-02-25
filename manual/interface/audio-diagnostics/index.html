@@ -314,15 +314,15 @@ audio from the current render being played out. It can be opened from the
 <ul>
 <li><em>Underruns</em> - This is the total count of underruns<sup><a href="#footnote-underrun">1</a></sup>
    that have occurred. Ideally this statistic should be zero. If you get
-   underruns try increasing the buffer size in the
+   underruns try increasing the <a href="../configuration/sound/#buffer-size">buffer size</a> in the
    <a href="../configuration/sound/">Sound / Midi</a> config.</li>
 <li><em>Buffer Usage</em> - This is the current utilization of the buffer, in samples.</li>
 <li><em>Status</em> - "Playing" if sound is being played, "Stopped" otherwise</li>
 <li><em>Elapsed</em> - Total time elapsed of the current render</li>
-<li><em>Refresh rate</em> - Time since the last period, should be ±1ms of your period
+<li><em>Refresh rate</em> - Time since the last <a href="../configuration/sound/#period">period</a>, should be ±1ms of your period
    setting in the <a href="../configuration/sound/">Sound / Midi</a> config.</li>
 <li><em>Samples written</em> - Number of samples written to the buffer during the last
-   period.</li>
+   <a href="../configuration/sound/#period">period</a>.</li>
 </ul>
 <h3 id="clear">Clear</h3>
 <p>You can clear the <em>Underruns</em> counter by clicking on the <em>Clear</em> button. Useful
