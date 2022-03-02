@@ -52,6 +52,10 @@
     <ul class="dropdown-menu">
             
 <li>
+    <a href="../configuration/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
     <a href="../configuration/general/" class="dropdown-item">General</a>
 </li>
             
@@ -160,6 +164,10 @@
 </li>
                                     
 <li>
+    <a href="../wav-exporter/" class="dropdown-item">WAV export</a>
+</li>
+                                    
+<li>
     <a href="../audio-diagnostics/" class="dropdown-item">Audio diagnostics</a>
 </li>
                                 </ul>
@@ -261,12 +269,12 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../audio-diagnostics/" class="nav-link">
+                                <a rel="next" href="../wav-exporter/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/stoneface86/trackerboy/edit/master/docs/interface/statusbar.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/stoneface86/trackerboy/edit/develop/docs/interface/statusbar.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -296,7 +304,22 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="status-bar">Status bar</h1>
-<p>This page is currently under construction.</p></div>
+<p><img alt="statusbar" src="../img/statusbar.png" title="The status bar" /></p>
+<ol>
+<li>Status message / tip.</li>
+<li>Output status.<ul>
+<li><em>Playing</em> - device is playing sound.</li>
+<li><em>Ready</em> - device is ready to play.</li>
+<li><em>Device error</em> - An error has ocurred with the device and cannot be used.
+  Reconfigure the device in the <a href="../configuration/sound/">Sound / Midi</a> config.</li>
+</ul>
+</li>
+<li>Current speed, in frames per row (FPR).</li>
+<li>Current tempo, in beats per minute (BPM).</li>
+<li>Elapsed time of music playback, in minutes:seconds.</li>
+<li>Position in song, first number is the order and the second is the row.</li>
+<li>Output sample rate, in Hertz (Hz).</li>
+</ol></div>
             </div>
         </div>
 

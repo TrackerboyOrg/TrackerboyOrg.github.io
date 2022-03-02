@@ -52,6 +52,10 @@
     <ul class="dropdown-menu">
             
 <li>
+    <a href="../../interface/configuration/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
     <a href="../../interface/configuration/general/" class="dropdown-item">General</a>
 </li>
             
@@ -157,6 +161,10 @@
                                     
 <li>
     <a href="../../interface/statusbar/" class="dropdown-item">Status bar</a>
+</li>
+                                    
+<li>
+    <a href="../../interface/wav-exporter/" class="dropdown-item">WAV export</a>
 </li>
                                     
 <li>
@@ -266,7 +274,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/stoneface86/trackerboy/edit/master/docs/tracker/octave-range.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/stoneface86/trackerboy/edit/develop/docs/tracker/octave-range.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -288,6 +296,18 @@
             
             <li class="nav-item" data-level="1"><a href="#octave-range-and-notes" class="nav-link">Octave range and notes</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#channel-frequency" class="nav-link">Channel frequency</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#channel-1-3-frequency-table" class="nav-link">Channel 1-3 Frequency table</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#channel-4-frequency-table" class="nav-link">Channel 4 Frequency table</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -296,7 +316,241 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="octave-range-and-notes">Octave range and notes</h1>
-<p>This page is currently under construction.</p></div>
+<p>Notes in Trackerboy range from octaves 2 to 8. <a href="https://en.wikipedia.org/wiki/Scientific_pitch_notation">Scientific pitch notation (SPN)</a>
+is used, with C-2 being approximately 64 Hz. Valid notes range from C-2 to B-8,
+inclusive, for channels 1-3. Valid notes on channel 4 range from C-2 to B-6,
+inclusive. Attempting to use a note outside this range will result in the note
+being clamped to its respective boundary.</p>
+<h2 id="channel-frequency">Channel frequency</h2>
+<p>Each channel has a frequency setting. Frequency in channels 1-3 is an 11-bit
+number (0-2047) with 0 being the lowest and 2047 being the highest. Frequency
+in channel 4 is a byte, with a specific format explained <a href="../../hardware/noise-channel/">here</a>.
+Notes in Trackerboy are mapped to specific frequencies using a table lookup.
+See below for the tables used.</p>
+<h2 id="channel-1-3-frequency-table">Channel 1-3 Frequency table</h2>
+<table>
+<thead>
+<tr>
+<th>Octave</th>
+<th>C</th>
+<th>C#</th>
+<th>D</th>
+<th>D#</th>
+<th>E</th>
+<th>F</th>
+<th>F#</th>
+<th>G</th>
+<th>G#</th>
+<th>A</th>
+<th>A#</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>0x02C</td>
+<td>0x09D</td>
+<td>0x107</td>
+<td>0x16B</td>
+<td>0x1CA</td>
+<td>0x223</td>
+<td>0x277</td>
+<td>0x2C7</td>
+<td>0x312</td>
+<td>0x358</td>
+<td>0x39B</td>
+<td>0x3DA</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0x416</td>
+<td>0x44E</td>
+<td>0x483</td>
+<td>0x4B5</td>
+<td>0x4E5</td>
+<td>0x511</td>
+<td>0x53C</td>
+<td>0x563</td>
+<td>0x589</td>
+<td>0x5AC</td>
+<td>0x5CE</td>
+<td>0x5ED</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0x60B</td>
+<td>0x627</td>
+<td>0x642</td>
+<td>0x65B</td>
+<td>0x672</td>
+<td>0x689</td>
+<td>0x69E</td>
+<td>0x6B2</td>
+<td>0x6C4</td>
+<td>0x6D6</td>
+<td>0x6E7</td>
+<td>0x6F7</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0x706</td>
+<td>0x714</td>
+<td>0x721</td>
+<td>0x72D</td>
+<td>0x739</td>
+<td>0x744</td>
+<td>0x74F</td>
+<td>0x759</td>
+<td>0x762</td>
+<td>0x76B</td>
+<td>0x773</td>
+<td>0x77B</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0x783</td>
+<td>0x78A</td>
+<td>0x790</td>
+<td>0x797</td>
+<td>0x79D</td>
+<td>0x7A2</td>
+<td>0x7A7</td>
+<td>0x7AC</td>
+<td>0x7B1</td>
+<td>0x7B6</td>
+<td>0x7BA</td>
+<td>0x7BE</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0x7C1</td>
+<td>0x7C5</td>
+<td>0x7C8</td>
+<td>0x7CB</td>
+<td>0x7CE</td>
+<td>0x7D1</td>
+<td>0x7D4</td>
+<td>0x7D6</td>
+<td>0x7D9</td>
+<td>0x7DB</td>
+<td>0x7DD</td>
+<td>0x7DF</td>
+</tr>
+<tr>
+<td>8</td>
+<td>0x7E1</td>
+<td>0x7E2</td>
+<td>0x7E4</td>
+<td>0x7E6</td>
+<td>0x7E7</td>
+<td>0x7E9</td>
+<td>0x7EA</td>
+<td>0x7EB</td>
+<td>0x7EC</td>
+<td>0x7ED</td>
+<td>0x7EE</td>
+<td>0x7EF</td>
+</tr>
+</tbody>
+</table>
+<h2 id="channel-4-frequency-table">Channel 4 Frequency table</h2>
+<table>
+<thead>
+<tr>
+<th>Octave</th>
+<th>C</th>
+<th>C#</th>
+<th>D</th>
+<th>D#</th>
+<th>E</th>
+<th>F</th>
+<th>F#</th>
+<th>G</th>
+<th>G#</th>
+<th>A</th>
+<th>A#</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>0xD7</td>
+<td>0xD6</td>
+<td>0xD5</td>
+<td>0xD4</td>
+<td>0xC7</td>
+<td>0xC6</td>
+<td>0xC5</td>
+<td>0xC4</td>
+<td>0xB7</td>
+<td>0xB6</td>
+<td>0xB5</td>
+<td>0xB4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0xA7</td>
+<td>0xA6</td>
+<td>0xA5</td>
+<td>0xA4</td>
+<td>0x97</td>
+<td>0x96</td>
+<td>0x95</td>
+<td>0x94</td>
+<td>0x87</td>
+<td>0x86</td>
+<td>0x85</td>
+<td>0x84</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0x77</td>
+<td>0x76</td>
+<td>0x75</td>
+<td>0x74</td>
+<td>0x67</td>
+<td>0x66</td>
+<td>0x65</td>
+<td>0x64</td>
+<td>0x57</td>
+<td>0x56</td>
+<td>0x55</td>
+<td>0x54</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0x47</td>
+<td>0x46</td>
+<td>0x45</td>
+<td>0x44</td>
+<td>0x37</td>
+<td>0x36</td>
+<td>0x35</td>
+<td>0x34</td>
+<td>0x27</td>
+<td>0x26</td>
+<td>0x25</td>
+<td>0x24</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0x17</td>
+<td>0x16</td>
+<td>0x15</td>
+<td>0x14</td>
+<td>0x07</td>
+<td>0x06</td>
+<td>0x05</td>
+<td>0x04</td>
+<td>0x03</td>
+<td>0x02</td>
+<td>0x01</td>
+<td>0x00</td>
+</tr>
+</tbody>
+</table></div>
             </div>
         </div>
 

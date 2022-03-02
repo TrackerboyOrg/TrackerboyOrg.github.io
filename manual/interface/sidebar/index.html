@@ -52,6 +52,10 @@
     <ul class="dropdown-menu">
             
 <li>
+    <a href="../configuration/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
     <a href="../configuration/general/" class="dropdown-item">General</a>
 </li>
             
@@ -157,6 +161,10 @@
                                     
 <li>
     <a href="../statusbar/" class="dropdown-item">Status bar</a>
+</li>
+                                    
+<li>
+    <a href="../wav-exporter/" class="dropdown-item">WAV export</a>
 </li>
                                     
 <li>
@@ -266,7 +274,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/stoneface86/trackerboy/edit/master/docs/interface/sidebar.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/stoneface86/trackerboy/edit/develop/docs/interface/sidebar.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -286,8 +294,24 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#the-sidebar" class="nav-link">The sidebar</a>
+            <li class="nav-item" data-level="1"><a href="#the-sidebar" class="nav-link">The Sidebar</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#visualizer" class="nav-link">Visualizer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#song-selector" class="nav-link">Song selector</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#song-editor" class="nav-link">Song editor</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#order-editor" class="nav-link">Order editor</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -295,8 +319,44 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="the-sidebar">The sidebar</h1>
-<p>This page is currently under construction.</p></div>
+<h1 id="the-sidebar">The Sidebar</h1>
+<p>The sidebar is located to the left of the <a href="../pattern-editor/">Pattern editor</a>
+and contains controls for the current song.</p>
+<p><img alt="sidebar" src="../img/sidebar.png" title="The sidebar" /></p>
+<h2 id="visualizer">Visualizer</h2>
+<p>The visualizer is an oscilloscope for the left and right channels. The top
+scope is the left channel and the bottom is the right. You can change the colors
+in the <a href="../configuration/appearance/">Appearance</a> config.</p>
+<h2 id="song-selector">Song selector</h2>
+<p>Use this combo box to change the current song to edit/play. New songs can be
+added from the <a href="../module-properties/">Module properties</a> dialog.</p>
+<h2 id="song-editor">Song editor</h2>
+<p>This section has controls for changing the song's settings.</p>
+<ul>
+<li><em>Rows/beat</em> - This setting determines the number of rows that make up a beat.
+   It used for tempo calculation and for highlighting rows in the pattern editor.
+   The default value for new songs is <strong>4</strong>.</li>
+<li><em>Rows/measure</em> - This setting determines how many rows make up a measure.
+   This setting should be a multiple of the <em>Rows/beat</em> setting but this is not
+   required. This setting is only used for highlighting rows in the pattern
+   editor. The default value is <strong>16</strong>.</li>
+<li><em>Rows</em> - This is the number of rows each track contains. Click the button to
+   change the setting. Note that setting a smaller size will truncate all
+   tracks in the song and cannot be undone. The default setting is <strong>64</strong> rows.</li>
+<li><em>Speed</em> - Initial speed setting when playing the song. Note that the value
+   is in hexadecimal. See <a href="../../tracker/speed/">Speed</a> for more details. The
+   default speed setting is <strong>0x60</strong>.</li>
+</ul>
+<h2 id="order-editor">Order editor</h2>
+<p>The order editor is where you edit the song's order. The song order is a list
+of orders, which is a set of track ids (one for each channel). You can reuse
+existing tracks across orders. Each song can have a maximum of 256 orders, and
+must have at least 1 order.</p>
+<p>To edit the order, move the cursor via the mouse or keyboard and edit the track
+id via the keyboard.</p>
+<h3 id="change-all">Change all</h3>
+<p>If this is checked, all track ids in the order will be edited via the keyboard
+or increment/decrement actions.</p></div>
             </div>
         </div>
 

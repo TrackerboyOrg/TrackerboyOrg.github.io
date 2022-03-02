@@ -52,6 +52,10 @@
     <ul class="dropdown-menu">
             
 <li>
+    <a href="../../configuration/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
     <a href="../../configuration/general/" class="dropdown-item">General</a>
 </li>
             
@@ -157,6 +161,10 @@
                                     
 <li>
     <a href="../../statusbar/" class="dropdown-item">Status bar</a>
+</li>
+                                    
+<li>
+    <a href="../../wav-exporter/" class="dropdown-item">WAV export</a>
 </li>
                                     
 <li>
@@ -266,7 +274,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/stoneface86/trackerboy/edit/master/docs/interface/menus/edit.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/stoneface86/trackerboy/edit/develop/docs/interface/menus/edit.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -288,6 +296,54 @@
             
             <li class="nav-item" data-level="1"><a href="#edit" class="nav-link">Edit</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#undo" class="nav-link">Undo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#redo" class="nav-link">Redo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#cut" class="nav-link">Cut</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#copy" class="nav-link">Copy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#paste" class="nav-link">Paste</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#paste-mix" class="nav-link">Paste Mix</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#erase" class="nav-link">Erase</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#select-all" class="nav-link">Select All</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#transpose" class="nav-link">Transpose</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#reverse" class="nav-link">Reverse</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#replace-instrument" class="nav-link">Replace instrument</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#key-repetition" class="nav-link">Key repetition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -296,7 +352,57 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="edit">Edit</h1>
-<p>This page is currently under construction.</p></div>
+<hr />
+<h2 id="undo">Undo</h2>
+<p>Undos the last change to the current song.</p>
+<h2 id="redo">Redo</h2>
+<p>Redos the last undone change.</p>
+<hr />
+<h2 id="cut">Cut</h2>
+<p>Copies the current selection to the clipboard and then erases it. If there is
+no selection, the cursor contents are used instead.</p>
+<h2 id="copy">Copy</h2>
+<p>Copies the current selection or cursor to the clipboard.</p>
+<h2 id="paste">Paste</h2>
+<p>Pastes the clipboard contents to the pattern at the cursor. This type of paste
+overwrites the contents at the cursor with clipboard data.</p>
+<h2 id="paste-mix">Paste Mix</h2>
+<p>Same as <a href="#Paste">Paste</a>, but mixes the clipboard data with the contents at the
+cursor. When mixing data, only empty columns get overwritten.</p>
+<h3 id="example">Example</h3>
+<p><img alt="paste-mix-ex1" src="../../img/paste-mix-ex1.png" title="Copy example" /></p>
+<p><img alt="paste-mix-ex2" src="../../img/paste-mix-ex2.png" title="Paste Mix example" />
+<img alt="paste-mix-ex3" src="../../img/paste-mix-ex3.png" title="Paste example" /></p>
+<p>Only rows 00 and 02 were copied since they were empty in the destination region.</p>
+<h2 id="erase">Erase</h2>
+<p>Erases selection contents. If there is no selection, the cursor contents are
+erased.</p>
+<hr />
+<h2 id="select-all">Select All</h2>
+<p>Alternates between selecting the current track and the whole pattern.</p>
+<hr />
+<h2 id="transpose">Transpose</h2>
+<p>Transposes the selected notes or cursor by a certain amount.</p>
+<h3 id="decrease-note">Decrease note</h3>
+<p>Transposes the note down by 1 semitone.</p>
+<h3 id="increase-note">Increase note</h3>
+<p>Transposes the note up by 1 semitone.</p>
+<h3 id="decrease-octave">Decrease octave</h3>
+<p>Transposes the note down by 1 octave.</p>
+<h3 id="increase-octave">Increase octave</h3>
+<p>Transposes the note up by 1 octave.</p>
+<h3 id="custom">Custom</h3>
+<p>Transposes the note by a specified number of semitones.</p>
+<h2 id="reverse">Reverse</h2>
+<p>Reverses by row the selected region. Does nothing if there is no selection.</p>
+<p><img alt="reverse-before" src="../../img/reverse-ex-before.png" title="Reverse example before" />
+<img alt="reverse-after" src="../../img/reverse-ex-after.png" title="Reverse example after" /></p>
+<h2 id="replace-instrument">Replace instrument</h2>
+<p>Replaces all selected instrument columns with the selected instrument. If no
+instrument is selected this action does nothing.</p>
+<hr />
+<h2 id="key-repetition">Key repetition</h2>
+<p>Toggles key repeat. When checked, holding down a key repeats it.</p></div>
             </div>
         </div>
 
