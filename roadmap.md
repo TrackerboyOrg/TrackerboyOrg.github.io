@@ -10,8 +10,8 @@ planned for the next milestone (version minor) release of Trackerboy.
 
 ## Required for release (v1.0.0)
 
- - [ ] **Backspace removes previous row**
- - [ ] **Option to erase instrument alongside note erase**
+ - [x] **Backspace removes previous row**
+ - [x] **Option to erase instrument alongside note erase**
  - [ ] **Envelope sequences**
      * [ ] **Envelope editor**
      * [ ] **Wave sequence editor**
