@@ -292,6 +292,10 @@
             
             <li class="nav-item" data-level="1"><a href="#change-log" class="nav-link">Change log</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#061-2022-03-15" class="nav-link">[0.6.1] - 2022-03-15</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#060-2022-03-03" class="nav-link">[0.6.0] - 2022-03-03</a>
               <ul class="nav flex-column">
               </ul>
@@ -352,8 +356,24 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="change-log">Change log</h1>
-<h2 id="060-2022-03-03">[0.6.0] - 2022-03-03</h2>
+<h2 id="061-2022-03-15">[0.6.1] - 2022-03-15</h2>
 <h3 id="added">Added</h3>
+<ul>
+<li>Backspace operation for pattern editor.</li>
+<li><a href="https://github.com/stoneface86/trackerboy/issues/7">#7</a> - Add icon for MacOS app (thanks <a href="https://github.com/jtakakura">@jtakakura</a>)</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Erasing a note will also erase the instrument column</li>
+<li>Moved Song order editor toolbar to the left of the order grid,
+   also added Song menu actions to the toolbar.</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li><a href="https://github.com/stoneface86/trackerboy/issues/5">#5</a> - Pattern Crash When Switching Songs</li>
+</ul>
+<h2 id="060-2022-03-03">[0.6.0] - 2022-03-03</h2>
+<h3 id="added_1">Added</h3>
 <ul>
 <li>Command line argument parsing, you can now open a module on application startup</li>
 <li>General tab in Config dialog for changing basic settings.</li>
@@ -368,7 +388,7 @@
 <li>Action for replacing all selected instrument columns with the current instrument
    (Edit|Replace instrument)</li>
 </ul>
-<h3 id="changed">Changed</h3>
+<h3 id="changed_1">Changed</h3>
 <ul>
 <li>Combined the Sound and Midi tabs in the Configuration dialog (Sound + MIDI)</li>
 <li>AZERTY keyboard layout uses French AZERTY</li>
@@ -386,7 +406,7 @@
 <li>Selecting an instrument/waveform will switch to that item in its editor if it is open.</li>
 <li>Module properties dialog can now be opened via Ctrl+P</li>
 </ul>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <ul>
 <li>Issue with Instrument Editor not properly updating when changing instruments</li>
 <li>Hitting enter in the sequence editor line edit opens the Wave editor</li>
@@ -399,7 +419,7 @@
 <li>Synthesizer quality setting in Sound configuration</li>
 </ul>
 <h2 id="050-2021-09-10">[0.5.0] - 2021-09-10</h2>
-<h3 id="added_1">Added</h3>
+<h3 id="added_2">Added</h3>
 <ul>
 <li>Instrument + Waveform list views for selecting/adding instruments/waveforms</li>
 <li>Effect columns can now be hidden/added for each track</li>
@@ -414,7 +434,7 @@
 <li>Comments dialog for editing module comments</li>
 <li>File menu now shows a list of recently opened/saved modules</li>
 </ul>
-<h3 id="changed_1">Changed</h3>
+<h3 id="changed_2">Changed</h3>
 <ul>
 <li>Back to using miniaudio instead of RtAudio for audio playback</li>
 <li>Trackerboy is now SDI instead of MDI (only one module can be open at a time).</li>
@@ -427,7 +447,7 @@
 <li>Instrument and Waveform editors are now dialogs instead of docks.</li>
 <li>Octave decrease/increase shortcut changed from numpad / * to Ctrl+[ and Ctrl+]</li>
 </ul>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <ul>
 <li>issue #2 - Exx not taking immediate effect (also fixes V0x and I0x not
               taking immediate effect as well)</li>
@@ -441,14 +461,14 @@
 <li>Patterns and Tempo spinboxes in Song settings editor</li>
 </ul>
 <h2 id="040-2021-07-07">[0.4.0] - 2021-07-07</h2>
-<h3 id="added_2">Added</h3>
+<h3 id="added_3">Added</h3>
 <ul>
 <li>MIDI support. You can now use a MIDI input device to input notes / preview instruments</li>
 <li>Order editor has increment/decrement and set operations again</li>
 <li>Oscilloscope visualizer</li>
 <li>Icons for cut/copy/paste</li>
 </ul>
-<h3 id="changed_2">Changed</h3>
+<h3 id="changed_3">Changed</h3>
 <ul>
 <li>32-bit builds are now supported</li>
 <li>Using RtAudio instead of miniaudio for audio playback</li>
@@ -459,23 +479,23 @@
 <li>Cursor row is locked when playing in follow-mode</li>
 <li>Selecting an order while playing in follow-mode jumps to it</li>
 </ul>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <ul>
 <li>Crash when creating new module on linux</li>
 <li>Copy/Paste bugs when copying effect columns</li>
 </ul>
 <h2 id="031-2021-06-23">[0.3.1] - 2021-06-23</h2>
-<h3 id="changed_3">Changed</h3>
+<h3 id="changed_4">Changed</h3>
 <ul>
 <li>Play and stop shortcut only triggers when pattern editor has focus</li>
 </ul>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <ul>
 <li>Note previews not working right on CH4</li>
 <li>Current track not updating in order editor</li>
 </ul>
 <h2 id="030-2021-06-22">[0.3.0] - 2021-06-22</h2>
-<h3 id="added_3">Added</h3>
+<h3 id="added_4">Added</h3>
 <ul>
 <li>Note previews when inputting notes in the pattern editor</li>
 <li>Pattern repeat mode</li>
@@ -488,7 +508,7 @@
 <li>Keybinds for tracker actions (play, stop, etc)</li>
 <li>Add "play and stop" shortcut (pressing enter plays, pressing it again stops)</li>
 </ul>
-<h3 id="changed_4">Changed</h3>
+<h3 id="changed_5">Changed</h3>
 <ul>
 <li>No longer need to have record mode on when deleting, transposing, etc
    (record mode now only applies to setting notes, instruments and effects)</li>
@@ -526,7 +546,7 @@ not be listed for this version.</p>
 <li>Audio diagnostics dialog (Help &gt; Audio Diagnostics) for debugging sound output / buffer issues.</li>
 </ul>
 <h2 id="010-2020-09-20">[0.1.0] - 2020-09-20</h2>
-<h3 id="added_4">Added</h3>
+<h3 id="added_5">Added</h3>
 <ul>
 <li>The main UI has been started</li>
 <li>Wave editor dialog, user can edit waveforms and preview them using a piano control</li>
@@ -535,7 +555,7 @@ not be listed for this version.</p>
 <li>DeviceManager and DeviceTable classes in the audio library</li>
 <li>demo_device_manager demo lists all available host api and output devices</li>
 </ul>
-<h3 id="changed_5">Changed</h3>
+<h3 id="changed_6">Changed</h3>
 <ul>
 <li>PlaybackQueue can use any portaudio device instead of the default one</li>
 <li>Reorganized library header folders</li>
@@ -548,7 +568,7 @@ not be listed for this version.</p>
 <li>Old ui code (instedit)</li>
 </ul>
 <h2 id="006-2020-08-09">[0.0.6] - 2020-08-09</h2>
-<h3 id="added_5">Added</h3>
+<h3 id="added_6">Added</h3>
 <ul>
 <li>song_demo, demonstrates playback of a Song</li>
 <li>Engine class, handles playback for Songs and sound effects</li>
@@ -560,7 +580,7 @@ not be listed for this version.</p>
 <li>RuntimeContext struct, utility struct containing Synth and Table references</li>
 <li>Timer class, used for tempo/speed</li>
 </ul>
-<h3 id="changed_6">Changed</h3>
+<h3 id="changed_7">Changed</h3>
 <ul>
 <li>Fixed warnings for ubuntu build</li>
 <li>Mixer no longer uses sigma approximation when calculating the STEP_TABLE, this was done as
@@ -575,12 +595,12 @@ not be listed for this version.</p>
 <li>Q53.hpp, replaced by Speed.hpp</li>
 </ul>
 <h2 id="005-2020-04-24">[0.0.5] - 2020-04-24</h2>
-<h3 id="added_6">Added</h3>
+<h3 id="added_7">Added</h3>
 <ul>
 <li>PatternMaster class, container for all tracks in a Song</li>
 <li>Synth::reset() and for all APU components also</li>
 </ul>
-<h3 id="changed_7">Changed</h3>
+<h3 id="changed_8">Changed</h3>
 <ul>
 <li>Instruments are now a sequence of commands, 1 command per frame</li>
 <li>All runtime classes have been rewritten to use the new pattern format</li>
@@ -606,7 +626,7 @@ not be listed for this version.</p>
 <li>PatternRuntime::reset()</li>
 </ul>
 <h2 id="004-2020-04-01">[0.0.4] - 2020-04-01</h2>
-<h3 id="added_7">Added</h3>
+<h3 id="added_8">Added</h3>
 <ul>
 <li>Wav class, for writing wav files (only supports 32-bit float format)</li>
 <li>Generator class, base class for PulseGen, WaveGen and NoiseGen</li>
@@ -615,7 +635,7 @@ not be listed for this version.</p>
 <li>Mixer class, adds bandlimited steps to left/right channels</li>
 <li>Sequencer class, similar to the previously removed one</li>
 </ul>
-<h3 id="changed_8">Changed</h3>
+<h3 id="changed_9">Changed</h3>
 <ul>
 <li>Minimum required C++ standard is now C++17</li>
 <li>PlaybackQueue uses float samples instead of int16_t</li>
@@ -635,7 +655,7 @@ not be listed for this version.</p>
 <li>Osc, PulseOsc and WaveOsc, since we are now using emulation based synthesis</li>
 </ul>
 <h2 id="003-2020-03-09">[0.0.3] - 2020-03-09</h2>
-<h3 id="added_8">Added</h3>
+<h3 id="added_9">Added</h3>
 <ul>
 <li>More test cases for File</li>
 <li>tests for <code>Table&lt;T&gt;</code></li>
@@ -646,7 +666,7 @@ not be listed for this version.</p>
 <li>Sweep class, replaces SweepPulseChannel</li>
 <li>HardwareFile struct (replaces ChannelFile)</li>
 </ul>
-<h3 id="changed_9">Changed</h3>
+<h3 id="changed_10">Changed</h3>
 <ul>
 <li>Fix exception being thrown when attempting to insert into table of size one less than maximum</li>
 <li>Rewrote Osc class. Subclasses must edit the delta buffer manually instead of
@@ -669,7 +689,7 @@ not be listed for this version.</p>
     ChannelFile, Mixer and Sequencer classes</li>
 </ul>
 <h2 id="002-2020-02-05">[0.0.2] - 2020-02-05</h2>
-<h3 id="added_9">Added</h3>
+<h3 id="added_10">Added</h3>
 <ul>
 <li><code>File::loadTable&lt;T&gt;</code> method</li>
 <li>uint16_t overload for correctEndian</li>
@@ -678,7 +698,7 @@ not be listed for this version.</p>
 <li><code>Table&lt;T&gt;::clear</code></li>
 <li>Version struct + operator overloads</li>
 </ul>
-<h3 id="changed_10">Changed</h3>
+<h3 id="changed_11">Changed</h3>
 <ul>
 <li>Rewrote implementation for <code>Table&lt;T&gt;</code>, no longer uses <code>std::unordered_map</code>
    Uses a vector for the item data, and a 256 uint8_t array that maps an id
@@ -695,12 +715,12 @@ not be listed for this version.</p>
    insert methods should be used instead.</li>
 </ul>
 <h2 id="001-2020-02-01">[0.0.1] - 2020-02-01</h2>
-<h3 id="added_10">Added</h3>
+<h3 id="added_11">Added</h3>
 <ul>
 <li>This CHANGELOG.md file to serve as a changelog for any new features, removals
    deprecations and so on for the project as a whole.</li>
 </ul>
-<h3 id="changed_11">Changed</h3>
+<h3 id="changed_12">Changed</h3>
 <ul>
 <li>README.md, added a roadmap section to list planned features and the order
    in which they are worked on.</li>
