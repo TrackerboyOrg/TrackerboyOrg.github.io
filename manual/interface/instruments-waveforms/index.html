@@ -292,6 +292,10 @@
             
             <li class="nav-item" data-level="1"><a href="#the-instrumentswaveforms-panel" class="nav-link">The instruments/waveforms panel</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#toolbar" class="nav-link">Toolbar</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -300,7 +304,36 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="the-instrumentswaveforms-panel">The instruments/waveforms panel</h1>
-<p>This page is currently under construction.</p></div>
+<p><img alt="panel" src="../img/instruments-waveforms.png" title="Instruments/Waveforms panel" /></p>
+<p>This panel shows all of your instruments and waveforms contained in the current
+module. It is located to the right of the <a href="../pattern-editor/">pattern editor</a>.</p>
+<p>You can have up to 64 instruments and 64 waveforms in each module. Each item can
+be referenced by its 6-bit ID. For instruments this ID is used in the instrument
+column in the pattern editor. For waveforms this ID is used as a parameter for
+the <a href="../../tracker/effect-list/#exx-set-envelope">Exx</a> effect.</p>
+<p>When an item is selected the instrument/waveform editor will switch to that item.
+You can also double-click an item to open the editor.</p>
+<p>When an instrument is selected, the pattern editor will automatically insert its
+ID into the instrument column when entering notes. To prevent this from happening,
+deselect the instrument by clicking on it while holding the <code>CTRL</code> key.</p>
+<h2 id="toolbar">Toolbar</h2>
+<p>The toolbar contains actions for adding/removing instruments or waveforms. Note
+that all actions in this toolbar permanently modify the module and CANNOT be
+undone.</p>
+<h3 id="add">Add</h3>
+<p>Adds an instrument/waveform to the module. The item uses the lowest available
+ID.</p>
+<h3 id="remove">Remove</h3>
+<p>Removes the selected item from the module.</p>
+<h3 id="duplicate">Duplicate</h3>
+<p>Makes a copy of the selected item. Like <a href="#add">Add</a>, the copied item uses the
+lowest available ID.</p>
+<h3 id="import">Import</h3>
+<p>This feature is currently not available.</p>
+<h3 id="export">Export</h3>
+<p>This feature is currently not available.</p>
+<h3 id="edit">Edit</h3>
+<p>Opens the editor for the selected item.</p></div>
             </div>
         </div>
 
