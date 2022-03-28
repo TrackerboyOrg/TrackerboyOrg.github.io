@@ -1,0 +1,2136 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Gameboy / Gameboy Color music tracker">
+      
+      
+      
+        <link rel="canonical" href="https://www.trackerboy.org/manual/changelog/">
+      
+      <link rel="icon" href="../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+    
+    
+      
+        <title>Change log - Trackerboy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.644de097.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#change-log" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Trackerboy" class="md-header__button md-logo" aria-label="Trackerboy" data-md-component="logo">
+      
+  <img src="../img/appicon-48.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Trackerboy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Change log
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/stoneface86/trackerboy" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    stoneface86/trackerboy
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../faq/" class="md-tabs__link">
+      FAQ
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../interface/" class="md-tabs__link">
+        Interface
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tracker/" class="md-tabs__link">
+        Tracker
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../hardware/" class="md-tabs__link">
+        Hardware Primer
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Change log
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../license/" class="md-tabs__link">
+      License
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Trackerboy" class="md-nav__button md-logo" aria-label="Trackerboy" data-md-component="logo">
+      
+  <img src="../img/appicon-48.png" alt="logo">
+
+    </a>
+    Trackerboy
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/stoneface86/trackerboy" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    stoneface86/trackerboy
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Interface
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Interface" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Interface
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          Configuration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Configuration" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Configuration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/configuration/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/configuration/general/" class="md-nav__link">
+        General
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/configuration/appearance/" class="md-nav__link">
+        Appearance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/configuration/keyboard/" class="md-nav__link">
+        Keyboard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/configuration/sound/" class="md-nav__link">
+        Sound / Midi
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          Menus
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Menus" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Menus
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/menus/file/" class="md-nav__link">
+        File
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/menus/edit/" class="md-nav__link">
+        Edit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/menus/module/" class="md-nav__link">
+        Module
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/menus/song/" class="md-nav__link">
+        Song
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/menus/instruments/" class="md-nav__link">
+        Instruments
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/menus/waveforms/" class="md-nav__link">
+        Waveforms
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/menus/tracker/" class="md-nav__link">
+        Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/menus/view/" class="md-nav__link">
+        View
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/menus/help/" class="md-nav__link">
+        Help
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/toolbars/" class="md-nav__link">
+        Toolbars
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/sidebar/" class="md-nav__link">
+        Sidebar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/pattern-editor/" class="md-nav__link">
+        Pattern editor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/instruments-waveforms/" class="md-nav__link">
+        Instruments/Waveforms panel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/instrument-editor/" class="md-nav__link">
+        Instrument editor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/waveform-editor/" class="md-nav__link">
+        Waveform editor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/module-properties/" class="md-nav__link">
+        Module properties
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/comments/" class="md-nav__link">
+        Comments
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/history/" class="md-nav__link">
+        History
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/tempo-calculator/" class="md-nav__link">
+        Tempo Calculator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/shortcuts/" class="md-nav__link">
+        Shortcuts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/statusbar/" class="md-nav__link">
+        Status bar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/wav-exporter/" class="md-nav__link">
+        WAV export
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/audio-diagnostics/" class="md-nav__link">
+        Audio diagnostics
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Tracker
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tracker" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Tracker
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tracker/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tracker/glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tracker/octave-range/" class="md-nav__link">
+        Octave range and notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tracker/channel-lock/" class="md-nav__link">
+        Channel locking
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tracker/speed/" class="md-nav__link">
+        Speed/Tempo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tracker/instruments/" class="md-nav__link">
+        Instruments
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tracker/effect-list/" class="md-nav__link">
+        Effect list
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tracker/sfx/" class="md-nav__link">
+        Sound effects (TBD)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Hardware Primer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Hardware Primer" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Hardware Primer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/pulse-channel/" class="md-nav__link">
+        Pulse channel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/wave-channel/" class="md-nav__link">
+        Wave channel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/noise-channel/" class="md-nav__link">
+        Noise channel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/envelope/" class="md-nav__link">
+        Channel envelope
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/sweep/" class="md-nav__link">
+        Frequency sweep
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/volume-control/" class="md-nav__link">
+        Volume control and panning
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Change log
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Change log
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#061-2022-03-15" class="md-nav__link">
+    [0.6.1] - 2022-03-15
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.6.1] - 2022-03-15">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#060-2022-03-03" class="md-nav__link">
+    [0.6.0] - 2022-03-03
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.6.0] - 2022-03-03">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_1" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_1" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_1" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#050-2021-09-10" class="md-nav__link">
+    [0.5.0] - 2021-09-10
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.5.0] - 2021-09-10">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_2" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_2" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_2" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed_1" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#040-2021-07-07" class="md-nav__link">
+    [0.4.0] - 2021-07-07
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.4.0] - 2021-07-07">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_3" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_3" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_3" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#031-2021-06-23" class="md-nav__link">
+    [0.3.1] - 2021-06-23
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.3.1] - 2021-06-23">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_4" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_4" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#030-2021-06-22" class="md-nav__link">
+    [0.3.0] - 2021-06-22
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.3.0] - 2021-06-22">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_4" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_5" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed_2" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#020-2021-06-15" class="md-nav__link">
+    [0.2.0] - 2021-06-15
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#010-2020-09-20" class="md-nav__link">
+    [0.1.0] - 2020-09-20
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.1.0] - 2020-09-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_5" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_6" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed_3" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#006-2020-08-09" class="md-nav__link">
+    [0.0.6] - 2020-08-09
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.0.6] - 2020-08-09">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_6" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_7" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed_4" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#005-2020-04-24" class="md-nav__link">
+    [0.0.5] - 2020-04-24
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.0.5] - 2020-04-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_7" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_8" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed_5" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#004-2020-04-01" class="md-nav__link">
+    [0.0.4] - 2020-04-01
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.0.4] - 2020-04-01">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_8" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_9" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed_6" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#003-2020-03-09" class="md-nav__link">
+    [0.0.3] - 2020-03-09
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.0.3] - 2020-03-09">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_9" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_10" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed_7" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#002-2020-02-05" class="md-nav__link">
+    [0.0.2] - 2020-02-05
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.0.2] - 2020-02-05">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_10" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_11" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed_8" class="md-nav__link">
+    Removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#001-2020-02-01" class="md-nav__link">
+    [0.0.1] - 2020-02-01
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.0.1] - 2020-02-01">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_11" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_12" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license/" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/stoneface86/trackerboy/edit/develop/docs/changelog.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+
+<h1 id="change-log">Change log</h1>
+<h2 id="061-2022-03-15">[0.6.1] - 2022-03-15</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Backspace operation for pattern editor.</li>
+<li><a href="https://github.com/stoneface86/trackerboy/issues/7">#7</a> - Add icon for MacOS app (thanks <a href="https://github.com/jtakakura">@jtakakura</a>)</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Erasing a note will also erase the instrument column</li>
+<li>Moved Song order editor toolbar to the left of the order grid,
+   also added Song menu actions to the toolbar.</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li><a href="https://github.com/stoneface86/trackerboy/issues/5">#5</a> - Pattern Crash When Switching Songs</li>
+</ul>
+<h2 id="060-2022-03-03">[0.6.0] - 2022-03-03</h2>
+<h3 id="added_1">Added</h3>
+<ul>
+<li>Command line argument parsing, you can now open a module on application startup</li>
+<li>General tab in Config dialog for changing basic settings.</li>
+<li>Appearance tab in Config dialog for changing fonts, colors and other settings</li>
+<li>Keyboard tab in Config dialog for changing keyboard layout and editing keybinds,
+   as well as shortcut key sequences.</li>
+<li>Colors for the audio scope and graph editors are now customizable</li>
+<li>Autosave. Disabled by default, enable in the General tab in Config.</li>
+<li>Jxy effect for setting the global volume scale.</li>
+<li>Menu action in Tracker for reseting the global volume (Tracker|Reset global volume)</li>
+<li>Context menu for pattern editor</li>
+<li>Action for replacing all selected instrument columns with the current instrument
+   (Edit|Replace instrument)</li>
+</ul>
+<h3 id="changed_1">Changed</h3>
+<ul>
+<li>Combined the Sound and Midi tabs in the Configuration dialog (Sound + MIDI)</li>
+<li>AZERTY keyboard layout uses French AZERTY</li>
+<li>QWERTZ keyboard layout uses German T3</li>
+<li>CascadiaMono is no longer the default font</li>
+<li>(Windows) Consolas is now the default font, falling back to Courier New if not available</li>
+<li>No longer using dock widgets, Instruments + Waveforms are now located to
+   the right of the pattern editor.</li>
+<li>Pattern editor row numbers can be displayed in decimal (default is hexadecimal)</li>
+<li>Cursor wrap can now be disabled in General settings</li>
+<li>Hxx effect (set sweep register) now works.</li>
+<li>Crash save filename no longer using colons in the timestamp (this resulted
+   in using an illegal filename on windows).</li>
+<li>Follow-mode is now accessible from the Tracker menu</li>
+<li>Selecting an instrument/waveform will switch to that item in its editor if it is open.</li>
+<li>Module properties dialog can now be opened via Ctrl+P</li>
+</ul>
+<h3 id="fixed_1">Fixed</h3>
+<ul>
+<li>Issue with Instrument Editor not properly updating when changing instruments</li>
+<li>Hitting enter in the sequence editor line edit opens the Wave editor</li>
+<li>Bug when saving a new module overwrites the last opened one instead of prompting
+   the user for a new location.</li>
+<li>Song editor not updating on song change.</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Synthesizer quality setting in Sound configuration</li>
+</ul>
+<h2 id="050-2021-09-10">[0.5.0] - 2021-09-10</h2>
+<h3 id="added_2">Added</h3>
+<ul>
+<li>Instrument + Waveform list views for selecting/adding instruments/waveforms</li>
+<li>Effect columns can now be hidden/added for each track</li>
+<li>Multiple song support, modules can now store 1-256 songs</li>
+<li>Backwards compatibilty for 0.0 (Rev A) modules</li>
+<li>Tempo calculator dialog (Song &gt; Tempo calculator...)</li>
+<li>Crash handler. Attempts to save a copy of the module after a fatal error</li>
+<li>Module properties dialog for editing the song list, module information and
+   framerate/system.</li>
+<li>Song next/previous actions for changing the current song</li>
+<li>Song selector in Sidebar for selecting the current song</li>
+<li>Comments dialog for editing module comments</li>
+<li>File menu now shows a list of recently opened/saved modules</li>
+</ul>
+<h3 id="changed_2">Changed</h3>
+<ul>
+<li>Back to using miniaudio instead of RtAudio for audio playback</li>
+<li>Trackerboy is now SDI instead of MDI (only one module can be open at a time).</li>
+<li>Initial window size is set to a maximum of 1280x720</li>
+<li>Module file format is now at 1.0 (Rev B)</li>
+<li>Config file is now more human friendly</li>
+<li>Redesigned header for the pattern editor</li>
+<li>Reduced spacing between columns in pattern editor</li>
+<li>Rewrote OrderEditor using a custom widget instead of QTableView + OrderModel</li>
+<li>Instrument and Waveform editors are now dialogs instead of docks.</li>
+<li>Octave decrease/increase shortcut changed from numpad / * to Ctrl+[ and Ctrl+]</li>
+</ul>
+<h3 id="fixed_2">Fixed</h3>
+<ul>
+<li>issue #2 - Exx not taking immediate effect (also fixes V0x and I0x not
+              taking immediate effect as well)</li>
+<li>issue #3 - PulseAudio hang</li>
+</ul>
+<h3 id="removed_1">Removed</h3>
+<ul>
+<li>Module tree view (replaced by instrument and waveform docks)</li>
+<li>Instrument select toolbar (functionality replaced by selecting an instrument
+   in the instruments dock)</li>
+<li>Patterns and Tempo spinboxes in Song settings editor</li>
+</ul>
+<h2 id="040-2021-07-07">[0.4.0] - 2021-07-07</h2>
+<h3 id="added_3">Added</h3>
+<ul>
+<li>MIDI support. You can now use a MIDI input device to input notes / preview instruments</li>
+<li>Order editor has increment/decrement and set operations again</li>
+<li>Oscilloscope visualizer</li>
+<li>Icons for cut/copy/paste</li>
+</ul>
+<h3 id="changed_3">Changed</h3>
+<ul>
+<li>32-bit builds are now supported</li>
+<li>Using RtAudio instead of miniaudio for audio playback</li>
+<li>Some improvements to the audio diagnostics dialog</li>
+<li>Fxx effect changes the speed immediately now (previously it only took effect on the next row)</li>
+<li>Status bar is now updated with speed/tempo, time elapsed and position of
+   current song being played.</li>
+<li>Cursor row is locked when playing in follow-mode</li>
+<li>Selecting an order while playing in follow-mode jumps to it</li>
+</ul>
+<h3 id="fixed_3">Fixed</h3>
+<ul>
+<li>Crash when creating new module on linux</li>
+<li>Copy/Paste bugs when copying effect columns</li>
+</ul>
+<h2 id="031-2021-06-23">[0.3.1] - 2021-06-23</h2>
+<h3 id="changed_4">Changed</h3>
+<ul>
+<li>Play and stop shortcut only triggers when pattern editor has focus</li>
+</ul>
+<h3 id="fixed_4">Fixed</h3>
+<ul>
+<li>Note previews not working right on CH4</li>
+<li>Current track not updating in order editor</li>
+</ul>
+<h2 id="030-2021-06-22">[0.3.0] - 2021-06-22</h2>
+<h3 id="added_4">Added</h3>
+<ul>
+<li>Note previews when inputting notes in the pattern editor</li>
+<li>Pattern repeat mode</li>
+<li>Step mode playback</li>
+<li>Input toolbar (set the octave and edit step)</li>
+<li>Instrument toolbar (combobox for the current instrument)</li>
+<li>Song menu, contains actions for adding/removing orders</li>
+<li>Sidebar widget, combines song settings + order editor</li>
+<li>Icon for configuration</li>
+<li>Keybinds for tracker actions (play, stop, etc)</li>
+<li>Add "play and stop" shortcut (pressing enter plays, pressing it again stops)</li>
+</ul>
+<h3 id="changed_5">Changed</h3>
+<ul>
+<li>No longer need to have record mode on when deleting, transposing, etc
+   (record mode now only applies to setting notes, instruments and effects)</li>
+<li>Arpeggio editor graph is now centered at 0</li>
+<li>Moved stuff from PatternEditor to separate toolbars</li>
+<li>Renamed Delete action in Edit menu to Erase</li>
+<li>View menu is now between Tracker and Window</li>
+<li>Fix "set volume on trigger" checkbox not updating when changing instruments</li>
+<li>Fix pattern previews not showing up on module load</li>
+<li>Fix order move up/down actions not disabling/enabling when user changes patterns</li>
+<li>Setting a note cut does not set the instrument column</li>
+</ul>
+<h3 id="removed_2">Removed</h3>
+<ul>
+<li>PatternEditor toolbar (now is part of the main application toolbar)</li>
+<li>Order increment/decrement and set controls</li>
+</ul>
+<h2 id="020-2021-06-15">[0.2.0] - 2021-06-15</h2>
+<p>The project has changed dramatically since the last release so changes will
+not be listed for this version.</p>
+<p>Here's a quick list of features:</p>
+<ul>
+<li>Open/save modules, can have multiple modules open at once</li>
+<li>Edit pattern data via keyboard (OpenMPT style keybindings, will be configurable in later versions)</li>
+<li>Transpose selection by note/octave or by a custom semitone offset (Ctrl+T)</li>
+<li>Reverse selected rows (Ctrl+R)</li>
+<li>Cut/Copy/Paste pattern data using system clipboard</li>
+<li>Mix paste (only the unset columns get set to the pasted data)</li>
+<li>Move pattern data via drag n drop</li>
+<li>Music playback, pattern cursor follows the current playing row</li>
+<li>Edit waveforms visually via a graph control, by selecting a preset or by manually entering waveram data</li>
+<li>Edit instrument sequences visually</li>
+<li>Instruments and Waveforms can be previewed using the piano control (or by keyboard).</li>
+<li>Undo/Redo functionality for song order and pattern editing.</li>
+<li>Audio diagnostics dialog (Help &gt; Audio Diagnostics) for debugging sound output / buffer issues.</li>
+</ul>
+<h2 id="010-2020-09-20">[0.1.0] - 2020-09-20</h2>
+<h3 id="added_5">Added</h3>
+<ul>
+<li>The main UI has been started</li>
+<li>Wave editor dialog, user can edit waveforms and preview them using a piano control</li>
+<li>Configuration dialog, user can select an audio device, set buffer size and volume</li>
+<li>Instrument editor dialog</li>
+<li>DeviceManager and DeviceTable classes in the audio library</li>
+<li>demo_device_manager demo lists all available host api and output devices</li>
+</ul>
+<h3 id="changed_6">Changed</h3>
+<ul>
+<li>PlaybackQueue can use any portaudio device instead of the default one</li>
+<li>Reorganized library header folders</li>
+<li>MusicRuntime only updates "locked" channels</li>
+<li>Rewrote Engine class to use MusicRuntime class</li>
+</ul>
+<h3 id="removed_3">Removed</h3>
+<ul>
+<li>File class</li>
+<li>Old ui code (instedit)</li>
+</ul>
+<h2 id="006-2020-08-09">[0.0.6] - 2020-08-09</h2>
+<h3 id="added_6">Added</h3>
+<ul>
+<li>song_demo, demonstrates playback of a Song</li>
+<li>Engine class, handles playback for Songs and sound effects</li>
+<li>FrequencyControl, frequency effect logic for channels 1, 2 and 3</li>
+<li>Note lookup table for channel 4, NOTE_NOISE_TABLE</li>
+<li>MusicRuntime, handles song playback (replaces SongRuntime + PatternRutime + TrackRuntime)</li>
+<li>NoteControl, handles note triggers and cuts with an optional delay.</li>
+<li>PatternCursor, utility class for random access/iteration of a Pattern</li>
+<li>RuntimeContext struct, utility struct containing Synth and Table references</li>
+<li>Timer class, used for tempo/speed</li>
+</ul>
+<h3 id="changed_7">Changed</h3>
+<ul>
+<li>Fixed warnings for ubuntu build</li>
+<li>Mixer no longer uses sigma approximation when calculating the STEP_TABLE, this was done as
+   an experiment and also worked as a low pass filter. Filtering will be done elsewhere in the future.</li>
+<li>added utility method Synth::setFrequency</li>
+<li>added several new effects. Effects are now categorized by pattern, track and frequency.</li>
+</ul>
+<h3 id="removed_4">Removed</h3>
+<ul>
+<li>InstrumentRuntime, TrackRuntime, PatternRuntime and SongRuntime classes. These are being replaced
+   with the newly added classes in the engine folder.</li>
+<li>Q53.hpp, replaced by Speed.hpp</li>
+</ul>
+<h2 id="005-2020-04-24">[0.0.5] - 2020-04-24</h2>
+<h3 id="added_7">Added</h3>
+<ul>
+<li>PatternMaster class, container for all tracks in a Song</li>
+<li>Synth::reset() and for all APU components also</li>
+</ul>
+<h3 id="changed_8">Changed</h3>
+<ul>
+<li>Instruments are now a sequence of commands, 1 command per frame</li>
+<li>All runtime classes have been rewritten to use the new pattern format</li>
+<li>Song serialization has been rewritten to use new pattern format</li>
+<li>File format signature changed so that it starts with a non-printable character</li>
+<li>TrackRuntime and InstrumentRuntime are now template classes</li>
+<li>Patterns function like FamiTracker's, a pattern is a combination of resuable track data</li>
+<li>Pattern is now a tuple of Track references</li>
+<li>Order is now a POD struct of track ids, one for each channel</li>
+<li>Track no longer behaves like an iterator and now contains data</li>
+<li>pattern demo now plays a recreation of national park from pokemon G/S/C</li>
+<li>implemented writeAll method in PlaybackQueue</li>
+<li>PlaybackQueue uses standard library for sleeping instead of using Pa_Sleep</li>
+<li>Synth methods now have noexcept and const qualifiers where applicable</li>
+<li>Fix issue in Wav writer, where the sample count in the fact chunk was
+   incorrect for multichannel data.</li>
+<li>The Mixer and Synth sampling rates can now be changed</li>
+<li>SongRuntime is now single-use, or, you can no longer set a new song</li>
+</ul>
+<h3 id="removed_5">Removed</h3>
+<ul>
+<li>Instruction struct, no longer needed</li>
+<li>PatternRuntime::reset()</li>
+</ul>
+<h2 id="004-2020-04-01">[0.0.4] - 2020-04-01</h2>
+<h3 id="added_8">Added</h3>
+<ul>
+<li>Wav class, for writing wav files (only supports 32-bit float format)</li>
+<li>Generator class, base class for PulseGen, WaveGen and NoiseGen</li>
+<li>PulseGen class, similar to the previously removed PulseChannel</li>
+<li>WaveGen class, similar to the previously removed WaveChannel</li>
+<li>Mixer class, adds bandlimited steps to left/right channels</li>
+<li>Sequencer class, similar to the previously removed one</li>
+</ul>
+<h3 id="changed_9">Changed</h3>
+<ul>
+<li>Minimum required C++ standard is now C++17</li>
+<li>PlaybackQueue uses float samples instead of int16_t</li>
+<li>Synth was rewritten to use emulation based synthesis, generates samples on
+   a per frame basis.</li>
+<li>Synth can now read and write APU registers</li>
+<li>reset() renamed to restart() in synth APU components</li>
+<li>setRegister renamed to writeRegister</li>
+<li>Sweep has its own shadow register and now longer uses the channel's on trigger
+   (this behavior now matches the hardware)</li>
+<li>Sweep and Envelope register contents get applied on restart</li>
+</ul>
+<h3 id="removed_6">Removed</h3>
+<ul>
+<li>include/trackerboy/synth/utils.hpp, no longer being used</li>
+<li>libtrackerboy/synth/test_Osc.cpp, was unused</li>
+<li>Osc, PulseOsc and WaveOsc, since we are now using emulation based synthesis</li>
+</ul>
+<h2 id="003-2020-03-09">[0.0.3] - 2020-03-09</h2>
+<h3 id="added_9">Added</h3>
+<ul>
+<li>More test cases for File</li>
+<li>tests for <code>Table&lt;T&gt;</code></li>
+<li>misc/genstep.py, similar to gensinc.py, generates bandlimited step sets for Osc</li>
+<li>implementation for WaveOsc</li>
+<li>NoiseGen, buffered version of NoiseChannel</li>
+<li>Envelope, moved code from EnvChannel here (will replace EnvChannel)</li>
+<li>Sweep class, replaces SweepPulseChannel</li>
+<li>HardwareFile struct (replaces ChannelFile)</li>
+</ul>
+<h3 id="changed_10">Changed</h3>
+<ul>
+<li>Fix exception being thrown when attempting to insert into table of size one less than maximum</li>
+<li>Rewrote Osc class. Subclasses must edit the delta buffer manually instead of
+   using <code>deltaSet</code>.</li>
+<li>Osc no longer uses sinc sets. It uses bandlimited steps instead, similiar to
+   blargg's http://www.slack.net/~ant/bl-synth/11.implementation.html. <code>Osc::generate</code>
+   uses floats for samples instead of int16_t. Samples range from -1.0-1.0, exceeding both
+   limits due to overshoot (so volume will need to be adjusted or clipping will occur).</li>
+<li>Mixer no longer emulates terminal volume/panning (tracker doesn't use it)</li>
+<li>Mixer works with sample buffers as opposed to individual samples from each channel</li>
+<li>Length counters are no longer emulated by the Synth</li>
+<li>Mixer and Sequencer were moved into Synth, as only the synth used these internally.</li>
+</ul>
+<h3 id="removed_7">Removed</h3>
+<ul>
+<li><code>Osc::deltaSet</code> as only WaveOsc needed this method</li>
+<li><code>Osc::setMute</code> and <code>Osc::muted</code>, replaced by <code>Osc::disable</code> and <code>Osc::disabled</code></li>
+<li>misc/gensinc.py no longer needed, replaced by genstep.py</li>
+<li>Channel, EnvChannel, PulseChannel, SweepPulseChannel, WaveChannel, NoiseChannel,
+    ChannelFile, Mixer and Sequencer classes</li>
+</ul>
+<h2 id="002-2020-02-05">[0.0.2] - 2020-02-05</h2>
+<h3 id="added_10">Added</h3>
+<ul>
+<li><code>File::loadTable&lt;T&gt;</code> method</li>
+<li>uint16_t overload for correctEndian</li>
+<li>Destructor and copy constructor to <code>Table&lt;T&gt;</code></li>
+<li><code>Table&lt;T&gt;::insert</code> methods</li>
+<li><code>Table&lt;T&gt;::clear</code></li>
+<li>Version struct + operator overloads</li>
+</ul>
+<h3 id="changed_11">Changed</h3>
+<ul>
+<li>Rewrote implementation for <code>Table&lt;T&gt;</code>, no longer uses <code>std::unordered_map</code>
+   Uses a vector for the item data, and a 256 uint8_t array that maps an id
+   to an index in the vector. Allowing for faster lookups but a slight
+   performance loss when removing items.</li>
+<li>Refactored pattern_demo.cpp and File.cpp to use new Table implementation</li>
+<li>table size is now a 2 byte field when saving/loading</li>
+<li>add setSpeed() overload to calculate speed from tempo/rpb settings. Song
+   no longer calculates speed when tempo or rpb is set.</li>
+</ul>
+<h3 id="removed_8">Removed</h3>
+<ul>
+<li><code>Table&lt;T&gt;::add</code>, <code>Table&lt;T&gt;::set</code>, as these methods are no longer needed as the
+   insert methods should be used instead.</li>
+</ul>
+<h2 id="001-2020-02-01">[0.0.1] - 2020-02-01</h2>
+<h3 id="added_11">Added</h3>
+<ul>
+<li>This CHANGELOG.md file to serve as a changelog for any new features, removals
+   deprecations and so on for the project as a whole.</li>
+</ul>
+<h3 id="changed_12">Changed</h3>
+<ul>
+<li>README.md, added a roadmap section to list planned features and the order
+   in which they are worked on.</li>
+<li>ORGANIZATION.md, added a guideline to use unix style newlines in all files</li>
+<li>CMakeLists.txt, updated project version to v0.0.1</li>
+</ul>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../hardware/volume-control/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Volume control and panning" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Volume control and panning
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../license/" class="md-footer__link md-footer__link--next" aria-label="Next: License" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              License
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tracking", "navigation.top", "toc.integrate"], "search": "../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c44cc438.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
