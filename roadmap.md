@@ -17,9 +17,9 @@ planned for the next milestone (version minor) release of Trackerboy.
      * [ ] **Wave sequence editor**
  - [ ] Extended sequence options
      * [ ] Arpeggio sequences
-         + [ ] Absolute
+         + [x] Absolute
          + [ ] Fixed
-         + [x] Relative
+         + [ ] Relative
      * [ ] Pitch sequences
          + [ ] Absolute
          + [x] Relative
