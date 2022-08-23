@@ -5,6 +5,11 @@ permalink: /changes/
 
 # Changes
 
+## [0.6.2] - 2022-08-22
+### Fixed
+ - Crash when deleting the last pattern of a song while it is playing. Tracker
+   will now jump to pattern 0 instead when this happens.
+
 ## [0.6.1] - 2022-03-15
 ### Added
  - Backspace operation for pattern editor.
