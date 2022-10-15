@@ -1,0 +1,8 @@
+{% assign classes = 'navbar-a' %}
+{% if include.link == page.permalink %}
+  {% capture classes %}{{ classes | append: ' navbar-current' }}{% endcapture %}
+{% endif %}
+<li class="navbar-li">
+  <a href="{{ include.link | relative_url }}" class="{{ classes }}">{{ include.name }}</a>
+</li>
+{%- assign classattr = nil -%}

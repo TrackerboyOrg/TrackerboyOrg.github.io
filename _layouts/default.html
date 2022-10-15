@@ -1,20 +1,94 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include head.html -%}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- seo -%}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+{% if page.custom-head -%}
+<!-- Custom page head tags START -->
+{{ page.custom-head }}
+<!-- Custom page head tags END -->
+{% endif %}
+  </head>
 
   <body>
+    <div id="page-container">
+      <div id="content-wrap">
+        <!-- Header and navigation -->
+        <header id="site-header">
+          <div class="container">
+            <div id="logo-plum"></div>
+            <img id="logo-img" src="{{ 'assets/img/logo.png' | relative_url }}" alt="Trackerboy logo">
 
-    {%- include header.html -%}
+            <nav class="navbar">
+              <ul class="navbar-ul">
+                {%- for item in site.nav -%}
+                  {%- include layouts/nav-item.html link=item.link name=item.name %}
+                {%- endfor %}
+              </ul>
+            </nav>
+          </div> <!-- div.container -->
+        </header>
+        
+        <!-- Page content -->
+        <main id="page-content" aria-label="Content">
+          <div class="container">
+<!-- Page content START -->
+{{ content }}
+<!-- Page content END -->
+          </div> <!-- div.container -->
+        </main>
+      </div> <!-- div#content-wrap -->
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+      <!-- Footer -->
+      <footer id="site-footer">
+        <div class="container">
+          <table id="footer-table">
+            <thead></thead>
+            <tbody>
+              <tr>
+                <td class="footer-table-td" id="footer-title">
+                  {{- site.title | escape -}}
+                </td>
+                <td class="footer-table-td" id="footer-copyright">
+                  Copyright © Brennan Ringey 2019-2022
+                </td>
+                <td class="footer-table-td" id="footer-socials">
+                  <ul class="social-list">
+                    {% if site.socials.github -%}
+                    <li class="social-list-li">
+                      <a class="social-list-a" rel="me" href="https://github.com/{{ site.socials.github | cgi_escape | escape }}" target="_blank" title="{{ site.socials.github | escape }}">
+                        {% include layouts/svg-icon.html classes='color-pal0 footer-icon' id='github' %}
+                        <span>GitHub</span>
+                      </a>
+                    </li>
+                    {%- endif %}
+                    {% if site.socials.twitter -%}
+                    <li class="social-list-li">
+                      <a class="social-list-a" rel="me" href="https://twitter.com/{{ site.socials.twitter | cgi_escape | escape }}" target="_blank" title="{{ site.socials.twitter | escape }}">
+                        {% include layouts/svg-icon.html classes='color-pal0 footer-icon' id='twitter' %}
+                        <span>Twitter</span>                  
+                      </a>
+                    </li>
+                    {%- endif %}
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </footer>
+    </div> <!-- div#page-container-->
 
-    {%- include footer.html -%}
-
+{% if page.custom-body %}
+<!-- Custom page body tags START -->
+{{ page.custom-body }}
+<!-- Custom page body tags END -->
+{% endif %}
   </body>
 
 </html>

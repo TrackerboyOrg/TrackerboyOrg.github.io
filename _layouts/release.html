@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h1>{{- page.title -}}</h1>
+
+<p>{% include downloads/released-on.html date=page.date %}</p>
+
+<div class="group-box">
+  <span class="group-box-title">Downloads</span>
+  <div class="group-box-content">
+    {%- include downloads/buttons.html download=page %}
+  </div>
+</div>
+
+<div class="group-box">
+  <span class="group-box-title">Changes</span>
+  <div class="group-box-content">
+    {{-content-}}
+  </div>
+</div>

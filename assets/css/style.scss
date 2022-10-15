@@ -1,0 +1,315 @@
+---
+---
+
+@import 'normalize', 'core', 'base-styles', 'container';
+
+@mixin site-banner($isHeader) {
+  color: $color-pal1;
+  background-color: $color-pal3;
+
+  $offset-x: 0;
+  $offset-y: 3px;
+  $blur: 5px;
+  $color: $color-shadow;
+  @if not $isHeader {
+    $offset-y: -$offset-y;
+  }
+
+  -webkit-box-shadow: $offset-x $offset-y $blur $color;
+  -moz-box-shadow: $offset-x $offset-y $blur $color;
+  box-shadow: $offset-x $offset-y $blur $color;
+}
+
+// Page layout ----------------------------------------------------------------
+
+#page-content {
+  padding: 3rem 0;
+  flex: 1;
+}
+
+#page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content-wrap {
+  flex: 1;
+}
+
+// SVG icons ------------------------------------------------------------------
+
+.svg-icon {
+  width: inherit;
+  height: inherit;
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: bottom;
+}
+
+// header ---------------------------------------------------------------------
+
+#site-header {
+  @include site-banner(true);
+  padding-top: 1.5rem;
+}
+
+// logo
+
+#logo-img {
+  display: inline-block;
+}
+
+$plum-logo-width: 64px;
+$plum-logo-height: 64px;
+
+#logo-plum {
+  display: inline-block;
+  width: $plum-logo-width;
+  height: $plum-logo-height;
+  background-image: url("{{'assets/img/logo-plum.png' | relative_url }}");
+  background-position: 0px 0px;
+  
+  &:hover {
+    background-position: -#{$plum-logo-width} 0px;
+  }
+}
+
+// navigation
+
+.navbar-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar-li {
+  float: left;
+  margin: 0;
+}
+
+.navbar-a {
+  display: block;
+  text-align: center;
+  margin: 2px;
+  padding: 12px 14px;
+  text-decoration: none;
+  color: $color-pal1;
+  &:hover {
+    color: $color-pal0;
+  }
+}
+
+.navbar-current {
+  color: $color-pal0;
+}
+
+// footer ---------------------------------------------------------------------
+
+#site-footer {
+  @include site-banner(false);
+  padding: 8px 0;
+}
+
+#footer-table {
+  width: 100%;
+}
+
+.footer-table-td {
+  padding: 0 8px;
+  vertical-align: top;
+}
+
+#footer-title {
+  text-align: left;
+  white-space: nowrap;
+}
+
+#footer-copyright {
+  text-align: center;
+  width: 100%;
+}
+
+#footer-socials {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list-li {
+  margin-bottom: 0.5rem;
+}
+
+.social-list-a {
+  color: $color-pal1;
+  &:hover {
+    color: $color-pal0;
+  }
+}
+
+.footer-icon {
+  width: 1.25em;
+  height: 1.25em;
+  vertical-align: text-bottom;
+}
+
+// Group boxes ----------------------------------------------------------------
+
+$group-box-padding: 16px;
+
+.group-box {
+  border-left: 4px solid $color-pal0;
+  //margin-bottom: 1rem;
+  &:hover {
+    border-left-color: $color-pal1;
+  }
+}
+
+.group-box-title {
+  padding: 0 8px;
+  color: $color-pal1;
+}
+
+.group-box-content {
+  padding: $group-box-padding;
+}
+
+// Collapsibles ---------------------------------------------------------------
+
+.collapsible-button {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 300;
+  &:hover {
+    color: $color-pal1;
+  }
+}
+
+$collapsible-animation-style: 0.2s ease-out;
+
+
+.collapsible-button-icon {
+  display: inline-block;
+  transition: transform $collapsible-animation-style;
+  color: $color-pal1;
+}
+
+.collapsible-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height $collapsible-animation-style;
+}
+
+// Download buttons -----------------------------------------------------------
+
+$download-button-border: 1px;
+$download-button-xpadding: 12px;
+$download-button-ypadding: 4px;
+
+$download-button-font-size: 16px;
+$download-button-small-font-size: 11px;
+
+$download-button-height: 48px;
+$download-button-content-height: $download-button-height - ($download-button-ypadding * 2) - ($download-button-border * 2);
+
+.download-button-icon {
+  display: inline-block;
+  width: $download-button-content-height;
+  height: $download-button-content-height;
+  margin-right: 4px;
+  vertical-align: bottom;
+}
+
+.download-button-content {
+  display: inline-block;
+  font-size: $download-button-font-size;
+  height: $download-button-content-height;
+  line-height: $download-button-content-height;
+  vertical-align: bottom;
+}
+
+.download-button-line1 {
+  display: block;
+  font-size: $download-button-font-size;
+  line-height: $download-button-font-size;
+  height: $download-button-font-size;
+  // this will vertically center both lines
+  padding-top: ($download-button-content-height - ($download-button-font-size + $download-button-small-font-size)) / 2;
+}
+
+.download-button-line2 {
+  display: block;
+  font-size: $download-button-small-font-size;
+  line-height: $download-button-small-font-size;
+  height: $download-button-small-font-size;
+  text-transform: uppercase;
+}
+
+.download-button {
+  display: inline-block;
+  padding: $download-button-ypadding $download-button-xpadding;
+  height: $download-button-height;
+  line-height: $download-button-content-height;
+  text-decoration: none;
+  white-space: nowrap;
+  color: $color-pal2;
+  background-color: transparent;
+  border: $download-button-border solid $color-pal2;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+
+  &:hover {
+    color: $color-pal1;
+    border-color: $color-pal1;
+  }
+}
+
+.download-button-filled {
+  color: white;
+  background-color: $color-pal2;
+  border-color: $color-pal2;
+  &:hover {
+    color: white;
+    background-color: $color-pal1;
+    border-color: $color-pal1;
+  }
+}
+
+.download-button-spacer {
+  margin-right: 8px;
+}
+
+.download-buttons {
+  font-size: 0; // removes white space being rendered inside the section tags
+}
+
+// changelog ------------------------------------------------------------------
+
+.changelog-title {
+  display: table;
+  font-size: 3rem;
+}
+
+.changelog-version:target {
+  background-color: $color-pal0;
+}
+
+.changelog-version {
+  display: table-cell;
+  text-align: left;
+}
+
+.changelog-date {
+  display: table-cell;
+  text-align: right;
+  width: 100%;
+}
+

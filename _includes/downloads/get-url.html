@@ -1,0 +1,14 @@
+{%- comment -%}
+  Gets the url of a download's asset. If the asset has a url set, then that is
+  returned, otherwise if it has a github-asset set then the link to github
+  asset for the download's version is returned.
+
+  Parameters:
+    download: A download object from the downloads collection
+    asset: An asset object from download.assets
+{%- endcomment -%}
+{%- if include.asset.url -%}
+{{- include.asset.url -}}
+{%- elsif include.asset.github-asset -%}
+{{- site.repourl -}}/releases/download/{{- include.download.title -}}/{{- include.asset.github-asset -}}
+{%- endif -%}
