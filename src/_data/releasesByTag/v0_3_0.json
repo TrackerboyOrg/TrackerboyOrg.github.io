@@ -1,0 +1,12 @@
+{
+  "version": "v0.3.0",
+  "date": "2021-06-22",
+  "changes": "### Added\n - Note previews when inputting notes in the pattern editor\n - Pattern repeat mode\n - Step mode playback\n - Input toolbar (set the octave and edit step)\n - Instrument toolbar (combobox for the current instrument)\n - Song menu, contains actions for adding/removing orders\n - Sidebar widget, combines song settings + order editor\n - Icon for configuration\n - Keybinds for tracker actions (play, stop, etc)\n - Add \"play and stop\" shortcut (pressing enter plays, pressing it again stops)\n\n### Changed\n - No longer need to have record mode on when deleting, transposing, etc\n   (record mode now only applies to setting notes, instruments and effects)\n - Arpeggio editor graph is now centered at 0\n - Moved stuff from PatternEditor to separate toolbars\n - Renamed Delete action in Edit menu to Erase\n - View menu is now between Tracker and Window\n - Fix \"set volume on trigger\" checkbox not updating when changing instruments\n - Fix pattern previews not showing up on module load\n - Fix order move up/down actions not disabling/enabling when user changes patterns\n - Setting a note cut does not set the instrument column\n\n### Removed\n - PatternEditor toolbar (now is part of the main application toolbar)\n - Order increment/decrement and set controls",
+  "assets": [
+    {
+      "name": "win64",
+      "github-asset": "trackerboy-v0.3.0-win.zip"
+    }
+  ],
+  "published": true
+}

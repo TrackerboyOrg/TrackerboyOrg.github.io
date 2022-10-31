@@ -1,0 +1,30 @@
+{
+  "repo": "https://github.com/stoneface86/trackerboy",
+  "nav": [
+    { "name": "Home",         "link": "/" },
+    { "name": "Downloads",    "link": "/downloads/" },
+    { "name": "Changes",      "link": "/changes/" },
+    { "name": "User Manual",  "link": "/manual/" },
+    { "name": "Roadmap" ,     "link": "https://github.com/stoneface86/trackerboy/issues/10" },
+    { "name": "GitHub" ,      "link": "https://github.com/stoneface86/trackerboy" },
+    { "name": "Bug Tracker",  "link": "https://github.com/stoneface86/trackerboy/issues/" }
+  ],
+  "footer": {
+    "title": "Trackerboy",
+    "copyright": "Copyright © Brennan Ringey 2019-2022",
+    "socials": [
+      {
+        "name": "GitHub",
+        "iconId": "github",
+        "link": "https://github.com/stoneface86",
+        "title": "stoneface86"
+      },
+      {
+        "name": "Twitter",
+        "iconId": "twitter",
+        "link": "https://twitter.com/stoneface86",
+        "title": "stoneface86"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+---
+permalink: /404.html
+title: Page not found
+---
+{% extends 'templates/base.njk' %}
+
+{% block content %}
+<section class="section-404">
+  <h1 class="section-404__h1">404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</section>
+{% endblock %}
+
+{% block head %}
+<style>
+{% include 'sass-css/404.css' %}
+</style>
+{% endblock head %}

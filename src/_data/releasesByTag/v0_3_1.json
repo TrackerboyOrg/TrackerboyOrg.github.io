@@ -1,0 +1,12 @@
+{
+  "version": "v0.3.1",
+  "date": "2021-06-23",
+  "changes": "### Changed\n - Play and stop shortcut only triggers when pattern editor has focus\n\n### Fixed\n - Note previews not working right on CH4\n - Current track not updating in order editor",
+  "assets": [
+    {
+      "name": "win64",
+      "github-asset": "trackerboy-v0.3.1-win.zip"
+    }
+  ],
+  "published": true
+}

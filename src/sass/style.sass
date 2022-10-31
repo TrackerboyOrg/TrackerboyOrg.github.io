@@ -1,0 +1,236 @@
+
+@use 'plums'
+@use 'sass:math'
+
+@mixin site-banner($isHeader)
+  color: plums.$colors-pal1
+  background-color: plums.$colors-pal3
+
+  $offset-x: 0
+  $offset-y: 3px
+  $blur: 5px
+  $color: plums.$colors-shadow
+  @if not $isHeader
+    $offset-y: -$offset-y
+  
+  @include plums.utils-shadow($offset-x, $offset-y, $blur, $color)
+
+
+// Page layout ----------------------------------------------------------------
+
+.page-content
+  padding: 3rem 0
+  flex: 1
+
+.page-container
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+
+.content-wrap
+  flex: 1
+
+$container-width: 960px !default
+$container-width-larger-than-mobile: 85% !default
+$container-width-larger-than-phablet: 80% !default
+
+.container
+  position: relative
+  width: 100%
+  max-width: $container-width
+  margin: 0 auto
+  padding: 0 20px
+  box-sizing: border-box
+
+// For devices larger than 400px
+@media (#{plums.$bp-larger-than-mobile})
+  .container
+    width: $container-width-larger-than-mobile
+    padding: 0
+
+@media (#{plums.$bp-larger-than-phablet})
+  .container
+    width: $container-width-larger-than-phablet
+
+
+// SVG icons ------------------------------------------------------------------
+
+.svg-icon
+  display: inline-block
+  width: inherit
+  height: inherit
+  
+  fill: currentColor
+  vertical-align: bottom
+
+
+// header ---------------------------------------------------------------------
+
+.site-header
+  @include site-banner(true)
+  padding-top: 1.5rem
+
+  &__logo-plum
+    $plum-logo-width: 64px
+    $plum-logo-height: 64px
+
+    display: inline-block
+    width: $plum-logo-width
+    height: $plum-logo-height
+    
+    background-image: url("/assets/img/logo-plum.png")
+    background-position: 0px 0px
+    
+    &:hover
+      background-position: -#{$plum-logo-width} 0px
+  
+  &__logo
+    display: inline-block
+
+
+.navbar
+
+  &__ul
+    margin: 0
+    padding: 0
+    overflow: hidden
+    
+    list-style: none
+
+  &__li
+    float: left
+    margin: 0
+
+  &__a
+    $padding: 12px
+    display: block
+    padding: $padding
+    
+    color: plums.$colors-pal1
+    text-align: center
+
+    &:hover, &--current
+      color: plums.$colors-pal0
+
+    &--current
+      $bordersize: 4px
+      padding-bottom: $padding - $bordersize
+      border-bottom: $bordersize solid plums.$colors-pal0
+
+
+// footer ---------------------------------------------------------------------
+
+.site-footer
+  @include site-banner(false)
+  padding: 8px 0
+
+
+.footer-content
+  display: flex
+
+  &__title
+    text-align: left
+    white-space: nowrap
+
+  &__copyright
+    padding: 0 8px
+    text-align: center
+    flex: 1 0
+
+  &__socials
+    text-align: right
+    white-space: nowrap
+
+  &__socials-ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+
+  &__socials-li
+    margin-bottom: 0.5rem
+
+
+  &__socials-a
+    color: plums.$colors-pal1
+    &:hover
+      color: plums.$colors-pal0
+
+  &__socials-icon
+    width: 1.25em
+    height: 1.25em
+    vertical-align: text-bottom
+
+
+// Collapsibles ---------------------------------------------------------------
+
+.collapsible
+  margin-bottom: 0.5rem
+  
+  &__button
+    cursor: pointer
+    font-size: 2rem
+    font-weight: 300
+    &:hover
+      color: plums.$colors-pal1
+  
+  $animation-style: 0.2s ease-out
+
+
+  &__button-icon
+    display: inline-block
+    transition: transform $animation-style
+    color: plums.$colors-pal1
+
+
+  &__content
+    overflow: hidden
+    max-height: 0
+    transition: max-height $animation-style
+
+
+// Download buttons -----------------------------------------------------------
+
+.download-buttons
+  font-size: 0 // removes white space being rendered inside the section tags
+
+.download-button
+  $content-height: 38px
+  $font-size: 16px
+  $small-font-size: 11px
+  height: $content-height
+  
+  .download-buttons > &
+    margin-right: 8px
+
+  .download-buttons > &:last-child
+    margin-right: 0
+
+  &__icon
+    display: inline-block
+    width: $content-height
+    height: $content-height
+    margin-right: 4px
+    vertical-align: bottom
+  
+  &__content
+    display: inline-block
+    font-size: $font-size
+    height: $content-height
+    line-height: $content-height
+    vertical-align: bottom
+
+  &__os
+    display: block
+    font-size: $font-size
+    line-height: $font-size
+    height: $font-size
+    // this will vertically center both lines
+    padding-top: math.div(($content-height - ($font-size + $small-font-size)), 2)
+
+  &__arch
+    display: block
+    font-size: $small-font-size
+    line-height: $small-font-size
+    height: $small-font-size
+    text-transform: uppercase

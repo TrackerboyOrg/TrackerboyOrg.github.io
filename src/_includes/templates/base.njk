@@ -1,0 +1,76 @@
+{% from 'templates/utils.njk' import svgIcon %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik&family=Fira+Code">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | url }}">
+    {%- seo "" -%}
+    {%- block head -%}{%- endblock -%}
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="content-wrap">
+        <!-- Header and navigation -->
+        <header class="site-header">
+          <div class="container">
+            <div class="site-header__logo-plum"></div>
+            <img class="site-header__logo" src="{{ '/assets/img/logo.png' | url }}" alt="Trackerboy logo">
+            <nav class="navbar">
+              <ul class="navbar__ul">
+                {%- for item in site.nav -%}
+                  {%- set classes = 'navbar__a' %}
+                  {%- if item.link == permalink %}
+                    {%- set classes %}{{classes}} navbar__a--current{% endset %}
+                  {%- endif %}
+                  <li class="navbar__li">
+                    <a href="{{ item.link | url }}" class="{{ classes }}">{{ item.name }}</a>
+                  </li>
+                {%- endfor %}
+              </ul>
+            </nav>
+          </div> <!-- div.container -->
+        </header>
+        
+        <!-- Page content -->
+        <main class="page-content" aria-label="Content">
+          <div class="container">
+<!-- CONTENT START ----------------------------------------------------------->
+{% block content %}{% endblock %}
+<!-- CONTENT END ------------------------------------------------------------->
+          </div> <!-- div.container -->
+        </main>
+      </div> <!-- div.content-wrap -->
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-content__title">
+              {{- site.footer.title -}}
+            </div>
+            <div class="footer-content__copyright">
+              {{- site.footer.copyright -}}
+            </div>
+            <div class="footer-content__socials">
+              <ul class="footer-content__socials-ul">
+              {% for item in site.footer.socials %}
+                <li class="footer-content__socials-li">
+                  <a class="footer-content__socials-a" rel="me" href="{{ item.link }}" target="_blank" title="{{ item.title }}">
+                    {{ svgIcon(item.iconId, "footer-content__socials-icon") }}
+                    <span>{{- item.name -}}</span>
+                  </a>
+                </li>
+              {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div> <!-- div#page-container-->
+{% block body %}{% endblock %}
+  </body>
+</html>

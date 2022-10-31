@@ -1,0 +1,16 @@
+{
+  "version": "v0.4.0",
+  "date": "2021-07-07",
+  "changes": "### Added\n - MIDI support. You can now use a MIDI input device to input notes / preview instruments\n - Order editor has increment/decrement and set operations again\n - Oscilloscope visualizer\n - Icons for cut/copy/paste\n\n### Changed\n - 32-bit builds are now supported\n - Using RtAudio instead of miniaudio for audio playback\n - Some improvements to the audio diagnostics dialog\n - Fxx effect changes the speed immediately now (previously it only took effect on the next row)\n - Status bar is now updated with speed/tempo, time elapsed and position of\n   current song being played.\n - Cursor row is locked when playing in follow-mode\n - Selecting an order while playing in follow-mode jumps to it\n\n### Fixed\n - Crash when creating new module on linux\n - Copy/Paste bugs when copying effect columns",
+  "assets": [
+    {
+      "name": "win32",
+      "github-asset": "trackerboy-v0.4.0-win-x86.zip"
+    },
+    {
+      "name": "win64",
+      "github-asset": "trackerboy-v0.4.0-win-x64.zip"
+    }
+  ],
+  "published": true
+}

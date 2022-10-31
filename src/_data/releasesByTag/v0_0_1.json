@@ -1,0 +1,6 @@
+{
+  "version": "v0.0.1",
+  "date": "2020-02-01",
+  "changes": "### Added\n - This CHANGELOG.md file to serve as a changelog for any new features, removals\n   deprecations and so on for the project as a whole.\n\n### Changed\n - README.md, added a roadmap section to list planned features and the order\n   in which they are worked on.\n - ORGANIZATION.md, added a guideline to use unix style newlines in all files\n - CMakeLists.txt, updated project version to v0.0.1",
+  "published": false
+}
