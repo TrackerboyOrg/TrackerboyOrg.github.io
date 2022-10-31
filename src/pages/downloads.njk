@@ -1,0 +1,52 @@
+---
+permalink: /downloads/
+title: Downloads
+---
+{% extends 'templates/base.njk' %}
+{% from 'templates/downloadButtons.njk' import downloadButtons %}
+
+{% block content %}
+{%- if releases.length >= 1 %}
+  <div class="gbox">
+    {% set latest = releases[0] %}
+    <span class="gbox__title">Latest version</span>
+    <div class="gbox__content">
+      <h3>
+        <a href="{{- latest.version | releaseUrl | url -}}">Trackerboy {{ latest.version }}</a>
+      </h3>
+      <p>{{ latest.date | releasedOn }}</p>
+      {{ downloadButtons(latest) }}
+    </div>
+  </div>
+  {%- if releases.length > 1 %}
+    <div class="gbox">
+      <span class="gbox__title">Older versions</span>
+      <div class="gbox__content">
+        {%- for releaseIndex in range(1, releases.length) %}
+          {%- set release = releases[releaseIndex] %}
+          <div class="collapsible">
+            <div class="collapsible__button" id="{{ release.version }}" onclick="toggleCollapse(this);">
+              <span class="collapsible__button-icon">&#9654;</span>
+              Trackerboy {{release.version}}
+            </div>
+            <div class="collapsible__content">
+              <p id="{{release.version}}">
+                {{ release.date | releasedOn }}
+                &mdash;
+                <a href="{{ release.version | releaseUrl | url }}">Details</a>
+              </p>
+              {{ downloadButtons(release) }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {%- endif %}
+{%- endif %}
+{% endblock %}
+
+{% block body %}
+<script type="text/javascript">
+{% include 'js/downloads.js' %}
+</script>
+{% endblock%}

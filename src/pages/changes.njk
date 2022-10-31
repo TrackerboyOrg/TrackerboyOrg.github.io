@@ -1,0 +1,34 @@
+---
+permalink: /changes/
+title: Changes
+---
+{% extends 'templates/base.njk' %}
+
+{% block content %}
+{% for release in releases %}
+  <div class="gbox">
+    <div class="gbox__title">
+      <div class="changelog-title">
+        <span class="changelog-title__versionText" id="{{ release.version }}">
+          {{- release.version -}}
+        </span>
+        <a class="changelog-title__versionHash" href="#{{- release.version -}}">#</a>
+        <span class="changelog-title__date">
+          {{- release.date -}}
+        </span>
+      </div>
+    </div>
+    <div class="gbox__content">
+{% renderTemplate 'njk,md', release %}
+{{ changes | safe }}
+{% endrenderTemplate %}
+    </div>
+  </div>
+{% endfor %}
+{% endblock %}
+
+{% block head %}
+<style>
+{% include 'sass-css/changelog.css' %}
+</style>
+{% endblock head %}

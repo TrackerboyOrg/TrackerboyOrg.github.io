@@ -1,0 +1,34 @@
+{%- from 'templates/utils.njk' import svgIcon -%}
+
+{%- macro downloadButtons(release) -%}
+{%- if release and ((release.assets and release.assets.length > 0) or release.published) %}
+<section class="download-buttons">
+  {%- for asset in release.assets %}
+    {% set info = getAssetInfo(release, asset) %}
+    <a class="btn btn--filled download-button" href="{{info.url}}">
+      {%- if info.iconId %}
+        <div class="download-button__icon">
+          {{ svgIcon(info.iconId) }}
+        </div>
+      {%- endif %}
+      <div class="download-button__content">
+      {%- if info.platform %}
+        <div class="download-button__os">{{ info.platform.os }}</div>
+        <div class="download-button__arch">{{ info.platform.arch }}-bit</div>
+      {%- else %}
+        {{ info.name }}
+      {%- endif %}
+      </div>
+    </a>
+  {%- endfor %}
+  <a class="btn download-button" href="https://github.com/stoneface86/trackerboy/releases/tag/{{ release.version }}">
+    <div class="download-button__icon">
+      {{ svgIcon('github') }}
+    </div>
+    <div class="download-button__content">Source</div>
+  </a>
+</section>
+{%- else -%}
+<p>No downloads available.</p>
+{%- endif %}
+{%- endmacro -%}

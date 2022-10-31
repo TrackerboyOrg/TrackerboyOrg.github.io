@@ -1,0 +1,24 @@
+{
+  "version": "v0.6.0",
+  "date": "2022-03-03",
+  "changes": "### Added\n - Command line argument parsing, you can now open a module on application startup\n - General tab in Config dialog for changing basic settings.\n - Appearance tab in Config dialog for changing fonts, colors and other settings\n - Keyboard tab in Config dialog for changing keyboard layout and editing keybinds,\n   as well as shortcut key sequences.\n - Colors for the audio scope and graph editors are now customizable\n - Autosave. Disabled by default, enable in the General tab in Config.\n - Jxy effect for setting the global volume scale.\n - Menu action in Tracker for reseting the global volume (Tracker|Reset global volume)\n - Context menu for pattern editor\n - Action for replacing all selected instrument columns with the current instrument\n   (Edit|Replace instrument)\n\n### Changed\n - Combined the Sound and Midi tabs in the Configuration dialog (Sound + MIDI)\n - AZERTY keyboard layout uses French AZERTY\n - QWERTZ keyboard layout uses German T3\n - CascadiaMono is no longer the default font\n - (Windows) Consolas is now the default font, falling back to Courier New if not available\n - No longer using dock widgets, Instruments + Waveforms are now located to\n   the right of the pattern editor.\n - Pattern editor row numbers can be displayed in decimal (default is hexadecimal)\n - Cursor wrap can now be disabled in General settings\n - Hxx effect (set sweep register) now works.\n - Crash save filename no longer using colons in the timestamp (this resulted\n   in using an illegal filename on windows).\n - Follow-mode is now accessible from the Tracker menu\n - Selecting an instrument/waveform will switch to that item in its editor if it is open.\n - Module properties dialog can now be opened via Ctrl+P\n\n### Fixed\n - Issue with Instrument Editor not properly updating when changing instruments\n - Hitting enter in the sequence editor line edit opens the Wave editor\n - Bug when saving a new module overwrites the last opened one instead of prompting\n   the user for a new location.\n - Song editor not updating on song change.\n\n### Removed\n - Synthesizer quality setting in Sound configuration",
+  "assets": [
+    {
+      "name": "linux64",
+      "github-asset": "trackerboy-v0.6.0-x64-linux.tar.gz"
+    },
+    {
+      "name": "win32",
+      "github-asset": "trackerboy-v0.6.0-x86-windows.zip"
+    },
+    {
+      "name": "win64",
+      "github-asset": "trackerboy-v0.6.0-x64-windows.zip"
+    },
+    {
+      "name": "manual",
+      "github-asset": "offline-manual.zip"
+    }
+  ],
+  "published": true
+}

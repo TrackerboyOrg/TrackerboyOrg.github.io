@@ -1,0 +1,22 @@
+
+.changelog-title
+  display: table
+  font-size: 3.5rem
+
+  &__versionText
+    display: table-cell
+
+    &:target
+      text-decoration: underline
+
+  &__date
+    display: table-cell
+    text-align: right
+    width: 100%
+
+  &__versionHash
+    display: none
+    padding-left: 1rem
+
+    .gbox:hover &
+      display: table-cell

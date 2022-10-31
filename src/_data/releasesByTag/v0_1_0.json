@@ -1,0 +1,6 @@
+{
+  "version": "v0.1.0",
+  "date": "2020-09-20",
+  "changes": "### Added\n - The main UI has been started\n - Wave editor dialog, user can edit waveforms and preview them using a piano control\n - Configuration dialog, user can select an audio device, set buffer size and volume\n - Instrument editor dialog\n - DeviceManager and DeviceTable classes in the audio library\n - demo_device_manager demo lists all available host api and output devices\n\n### Changed\n - PlaybackQueue can use any portaudio device instead of the default one\n - Reorganized library header folders\n - MusicRuntime only updates \"locked\" channels\n - Rewrote Engine class to use MusicRuntime class\n\n### Removed\n - File class\n - Old ui code (instedit)",
+  "published": true
+}

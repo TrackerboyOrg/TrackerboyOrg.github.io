@@ -1,0 +1,12 @@
+{
+  "version": "v0.2.0",
+  "date": "2021-06-15",
+  "changes": "The project has changed dramatically since the last release so changes will\nnot be listed for this version.\nHere's a quick list of features:\n * Open/save modules, can have multiple modules open at once\n * Edit pattern data via keyboard (OpenMPT style keybindings, will be configurable in later versions)\n * Transpose selection by note/octave or by a custom semitone offset (Ctrl+T)\n * Reverse selected rows (Ctrl+R)\n * Cut/Copy/Paste pattern data using system clipboard\n * Mix paste (only the unset columns get set to the pasted data)\n * Move pattern data via drag n drop\n * Music playback, pattern cursor follows the current playing row\n * Edit waveforms visually via a graph control, by selecting a preset or by manually entering waveram data\n * Edit instrument sequences visually\n * Instruments and Waveforms can be previewed using the piano control (or by keyboard).\n * Undo/Redo functionality for song order and pattern editing.\n * Audio diagnostics dialog (Help > Audio Diagnostics) for debugging sound output / buffer issues.",
+  "assets": [
+    {
+      "name": "win64",
+      "github-asset": "trackerboy-v0.2.0-win.zip"
+    }
+  ],
+  "published": true
+}

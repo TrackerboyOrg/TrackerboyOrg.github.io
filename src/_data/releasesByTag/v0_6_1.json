@@ -1,0 +1,24 @@
+{
+  "version": "v0.6.1",
+  "date": "2022-03-15",
+  "changes": "### Added\n - Backspace operation for pattern editor.\n - [#7] - Add icon for MacOS app (thanks [@jtakakura])\n\n### Changed\n - Erasing a note will also erase the instrument column\n - Moved Song order editor toolbar to the left of the order grid,\n   also added Song menu actions to the toolbar.\n\n### Fixed\n - [#5] - Pattern Crash When Switching Songs\n\n[#5]: https://github.com/stoneface86/trackerboy/issues/5\n[#7]: https://github.com/stoneface86/trackerboy/issues/7\n[@jtakakura]: https://github.com/jtakakura",
+  "assets": [
+    {
+      "name": "linux64",
+      "github-asset": "trackerboy-v0.6.1-x64-linux.tar.gz"
+    },
+    {
+      "name": "win32",
+      "github-asset": "trackerboy-v0.6.1-x86-windows.zip"
+    },
+    {
+      "name": "win64",
+      "github-asset": "trackerboy-v0.6.1-x64-windows.zip"
+    },
+    {
+      "name": "manual",
+      "github-asset": "manual.zip"
+    }
+  ],
+  "published": true
+}

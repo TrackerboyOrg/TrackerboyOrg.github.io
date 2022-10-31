@@ -1,0 +1,24 @@
+{
+  "version": "v0.5.0",
+  "date": "2021-09-10",
+  "changes": "### Added\n - Instrument + Waveform list views for selecting/adding instruments/waveforms\n - Effect columns can now be hidden/added for each track\n - Multiple song support, modules can now store 1-256 songs\n - Backwards compatibilty for 0.0 (Rev A) modules\n - Tempo calculator dialog (Song > Tempo calculator...)\n - Crash handler. Attempts to save a copy of the module after a fatal error\n - Module properties dialog for editing the song list, module information and\n   framerate/system.\n - Song next/previous actions for changing the current song\n - Song selector in Sidebar for selecting the current song\n - Comments dialog for editing module comments\n - File menu now shows a list of recently opened/saved modules\n\n### Changed\n - Back to using miniaudio instead of RtAudio for audio playback\n - Trackerboy is now SDI instead of MDI (only one module can be open at a time).\n - Initial window size is set to a maximum of 1280x720\n - Module file format is now at 1.0 (Rev B)\n - Config file is now more human friendly\n - Redesigned header for the pattern editor\n - Reduced spacing between columns in pattern editor\n - Rewrote OrderEditor using a custom widget instead of QTableView + OrderModel\n - Instrument and Waveform editors are now dialogs instead of docks.\n - Octave decrease/increase shortcut changed from numpad / * to Ctrl+[ and Ctrl+]\n\n### Fixed\n - issue #2 - Exx not taking immediate effect (also fixes V0x and I0x not\n              taking immediate effect as well)\n - issue #3 - PulseAudio hang\n\n### Removed\n - Module tree view (replaced by instrument and waveform docks)\n - Instrument select toolbar (functionality replaced by selecting an instrument\n   in the instruments dock)\n - Patterns and Tempo spinboxes in Song settings editor",
+  "assets": [
+    {
+      "name": "linux64",
+      "github-asset": "trackerboy-v0.5.0-x64-linux.tar.gz"
+    },
+    {
+      "name": "osx64",
+      "github-asset": "trackerboy-v0.5.0-x64-osx.zip"
+    },
+    {
+      "name": "win32",
+      "github-asset": "trackerboy-v0.5.0-x86-windows.zip"
+    },
+    {
+      "name": "win64",
+      "github-asset": "trackerboy-v0.5.0-x64-windows.zip"
+    }
+  ],
+  "published": true
+}

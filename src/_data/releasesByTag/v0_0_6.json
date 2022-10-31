@@ -1,0 +1,6 @@
+{
+  "version": "v0.0.6",
+  "date": "2020-08-09",
+  "changes": "### Added\n - song_demo, demonstrates playback of a Song\n - Engine class, handles playback for Songs and sound effects\n - FrequencyControl, frequency effect logic for channels 1, 2 and 3\n - Note lookup table for channel 4, NOTE_NOISE_TABLE\n - MusicRuntime, handles song playback (replaces SongRuntime + PatternRutime + TrackRuntime)\n - NoteControl, handles note triggers and cuts with an optional delay.\n - PatternCursor, utility class for random access/iteration of a Pattern\n - RuntimeContext struct, utility struct containing Synth and Table references\n - Timer class, used for tempo/speed\n\n### Changed\n - Fixed warnings for ubuntu build\n - Mixer no longer uses sigma approximation when calculating the STEP_TABLE, this was done as\n   an experiment and also worked as a low pass filter. Filtering will be done elsewhere in the future.\n - added utility method Synth::setFrequency\n - added several new effects. Effects are now categorized by pattern, track and frequency.\n\n### Removed\n - InstrumentRuntime, TrackRuntime, PatternRuntime and SongRuntime classes. These are being replaced\n   with the newly added classes in the engine folder.\n - Q53.hpp, replaced by Speed.hpp",
+  "published": false
+}

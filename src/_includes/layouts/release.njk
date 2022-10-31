@@ -1,0 +1,23 @@
+{% set title = release.version %}
+{% extends 'templates/base.njk' %}
+{% from 'templates/downloadButtons.njk' import downloadButtons %}
+
+{% block content %}
+<h1>{{- release.version -}}</h1>
+
+<p>{{ release.date | releasedOn }}</p>
+
+<div class="gbox">
+  <span class="gbox__title">Downloads</span>
+  <div class="gbox__content">
+    {{ downloadButtons(release) }}
+  </div>
+</div>
+
+<div class="gbox">
+  <span class="gbox__title">Changes</span>
+  <div class="gbox__content">
+    {{ content | safe }}
+  </div>
+</div>
+{% endblock %}
