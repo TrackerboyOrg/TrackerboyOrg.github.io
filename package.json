@@ -5,10 +5,12 @@
   "description": "11ty project for the official Trackerboy website",
   "scripts": {
     "build:sass": "node sassbuild.js",
+    "build:manual": "mkdocs build",
     "build:eleventy": "eleventy",
-    "build": "run-s build:sass build:eleventy",
+    "build": "run-s build:sass build:manual build:eleventy",
     "prod": "SITE_ENV=production npm run build",
     "serve:sass": "node sassbuild.js --watch",
+    "serve:manual": "mkdocs serve -a localhost:8081",
     "serve:eleventy": "eleventy --serve",
     "serve": "run-p serve:*",
     "clean": "rimraf _site src/_includes/sass-css"
