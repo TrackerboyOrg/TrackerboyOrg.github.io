@@ -6,7 +6,7 @@
   "scripts": {
     "build:sass": "node sassbuild.js",
     "build:eleventy": "eleventy",
-    "build": "run-s build:sass build:manual build:eleventy",
+    "build": "run-s build:sass build:eleventy",
     "prod": "SITE_ENV=production npm run build",
     "serve:sass": "node sassbuild.js --watch",
     "serve:eleventy": "eleventy --serve",
