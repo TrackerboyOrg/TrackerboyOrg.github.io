@@ -1,0 +1,56 @@
+---
+permalink: /manual/interface/audio-diagnostics/
+layout: layouts/manual.njk
+eleventyNavigation:
+  key: Audio Diagnostics
+  parent: Interface
+---
+= Audio diagnostics
+:experimental:
+:imagesdir: ../../../assets/img/manual
+:fn-underruns: footnote:[An underrun occurs when the buffer does not contain enough samples that the audio device requests. Silence is filled in for these missing samples and what you hear is a gap in playback.]
+:ln-audio-config: xref:config/sound.adoc[Sound / Midi]
+:ln-period: xref:config/sound.adoc#period[period]
+
+image:interface/audio-diagnostics.png[Audio diagnostics dialog]
+image:interface/audio-diagnostics-where-to-find.png[Where to find the audio diagnostics]
+
+The audio diagnostics dialog is a utility for displaying statistics about the
+audio from the current render being played out. It can be opened by selecting
+the menu:Help[Audio diagnostics...] action in the xref:menus/help.adoc[help menu].
+
+== Statistics
+
+* *Underruns* - This is the total count of underruns{fn-underruns} that have 
+occurred. Ideally this statistic should be zero. If you get underruns try
+increasing the xref:config/sound.adoc#buffer-size[buffer size] in the
+{ln-audio-config} config.
+
+* *Buffer Usage* - This is the current utilization of the buffer, in samples.
+
+* *Status* - "Playing" if sound is being played, "Stopped" otherwise
+
+* *Elapsed* - Total time elapsed of the current render
+
+* *Refresh rate* - Time since the last {ln-period}, should be ±1ms of your
+period setting in the {ln-audio-config} config.
+
+* *Samples written* - Number of samples written to the buffer during the last
+{ln-period}.
+
+=== Clear
+
+You can clear the *Underruns* counter by clicking on the btn:[Clear] button.
+Useful for testing if a new sound configuration has any underruns.
+
+== Refresh
+
+By default, the dialog is automatically refreshed every 100 ms. You can change
+the refresh rate by editing the spinbox or you can disable the auto-refresh by
+checking off the *Auto-refresh* checkbox.
+
+If auto-refresh is disabled the statistics will only be updated when you click
+the *Refresh* button.
+
+The btn:[Refresh] button can be clicked at any time to force update the
+statistics.

@@ -1,0 +1,147 @@
+---
+permalink: /manual/interface/shortcuts/
+layout: layouts/manual.njk
+eleventyNavigation:
+  key: Shortcuts
+  parent: Interface
+---
+= Shortcuts
+:experimental:
+
+This page lists all keyboard shortcuts accessible in the application
+
+== Configurable shortcuts
+
+This list of shortcuts can be changed in the xref:config/keyboard.adoc[Keyboard] 
+configuration. If left blank then there is no default binding set for that
+action.
+
+[%header,cols="1,1"]
+|===
+| Action
+| Default key sequence
+
+| Select previous instrument
+| kbd:[Ctrl+Left]
+
+| Select next instrument
+| kbd:[Ctrl+Right]
+
+| Select previous pattern
+| kbd:[Ctrl+Up]
+
+| Select next pattern
+| kbd:[Ctrl+Down]
+
+| Increment octave
+| kbd:[Ctrl+[]
+
+| Decrement octave
+| kbd:[Ctrl+\]]
+
+| Play / Stop
+| kbd:[Return]
+
+| Mix paste
+| kbd:[Ctrl+M]
+
+| Transpose, decrease note
+| kbd:[Ctrl+F1]
+
+| Transpose, increase note
+| kbd:[Ctrl+F2]
+
+| Transpose, decrease octave
+| kbd:[Ctrl+F3]
+
+| Transpose, increase octave
+| kbd:[Ctrl+F4]
+
+| Transpose, custom
+| kbd:[Ctrl+T]
+
+| Reverse
+| kbd:[Ctrl+R]
+
+| Replace instrument            
+|
+
+| Play                          
+|
+
+| Play from start               
+| kbd:[F5]
+
+| Play from cursor              
+| kbd:[F6]
+
+| Step from cursor              
+| kbd:[F7]
+
+| Stop                          
+| kbd:[F8]
+
+| Toggle pattern repeat         
+| kbd:[F9]
+
+| Toggle record mode            
+| kbd:[Space]
+
+| Toggle channel output         
+| kbd:[F10]
+
+| Solo channel                  
+| kbd:[F11]
+
+| Kill sound                    
+| kbd:[F12]
+
+| Edit instrument               
+| kbd:[Ctrl+I]
+
+| Edit waveform                 
+| kbd:[Ctrl+W]
+
+| Module properties...
+| kbd:[Ctrl+P]
+|===
+
+## Menu shortcuts
+
+These shortcuts are OS-specific and will have their key bind shown in the menu.
+
+[%header,cols="1,1"]
+|===
+| Action
+| Possible key sequences
+
+| New                           
+| kbd:[Ctrl+N]
+
+| Open
+| kbd:[Ctrl+O]
+
+| Save
+| kbd:[Ctrl+S]
+
+| Undo
+| kbd:[Ctrl+Z]
+
+| Redo
+| kbd:[Ctrl+Y], kbd:[Ctrl+Shift+Z]
+
+| Cut
+| kbd:[Ctrl+X]
+
+| Copy
+| kbd:[Ctrl+C]
+
+| Paste
+| kbd:[Ctrl+V]
+
+| Erase
+| kbd:[Del]
+
+| Select All
+| kbd:[Ctrl+A]
+|===

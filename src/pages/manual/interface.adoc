@@ -1,0 +1,88 @@
+---
+permalink: /manual/interface/
+layout: layouts/manual.njk
+eleventyNavigation:
+  key: Interface
+  parent: User Manual
+---
+= Interface
+:imagesdir: ../../assets/img/manual
+
+The interface section of the manual describes every part of the Trackerboy 
+interface.
+
+image::interface/overview.png[The Trackerboy interface]
+
+## Main window
+
+Each component of the main window is listed in order from top to bottom, left
+to right.
+
+[%header,cols="1, 1"]
+|===
+| Component
+| Description
+
+| xref:interface/menus.adoc[Menus]
+| The application menubar
+
+| xref:interface/toolbars.adoc[Toolbars]
+| Repositionable toolbars
+
+| xref:interface/sidebar.adoc[Sidebar]
+| Sidebar panel containing the scope, song and order editor
+
+| xref:interface/pattern-editor.adoc[Pattern editor]
+| The pattern editor
+
+| xref:interface/instruments-waveforms.adoc[Instruments / Waveforms panel]
+| The module's instruments and waveforms
+
+| xref:interface/statusbar.adoc[Status bar]
+| The application's status bar
+|===
+
+## Editors
+
+Editors are dialog windows that can be manually opened.
+
+[%header,cols="1, 1"]
+|===
+| Editor
+| Description
+
+| xref:interface/instrument-editor.adoc[Instrument editor]
+| For editing an instrument in the module
+ 
+| xref:interface/waveform-editor.adoc[Waveform editor]
+| For editing an waveform in the module
+|===
+
+## Miscellaneous
+
+[%header,cols="1, 1"]
+|===
+| Component
+| Description
+
+| xref:interface/comments.adoc[Comments]
+| Dialog for editing the module's comments
+
+| xref:interface/module-properties.adoc[Module properties]
+| Dialog for modifying module properties
+
+| xref:interface/tempo-calculator.adoc[Tempo calculator]  
+| Calculator utility for calculating speed values
+
+| xref:interface/history.adoc[History]
+| Dialog containing the Undo/Redo history
+
+| xref:interface/shortcuts.adoc[Shortcuts]
+| List of shortcuts used by the application
+
+| xref:interface/audio-diagnostics.adoc[Audio Diagnostics]
+| Audio output statistics and diagnostic information
+
+| xref:interface/config.adoc[Configuration]
+| Dialog for editing the application's configuration/settings
+|===

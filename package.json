@@ -5,22 +5,23 @@
   "description": "11ty project for the official Trackerboy website",
   "scripts": {
     "build:sass": "node sassbuild.js",
-    "build:manual": "mkdocs build",
     "build:eleventy": "eleventy",
     "build": "run-s build:sass build:manual build:eleventy",
     "prod": "SITE_ENV=production npm run build",
     "serve:sass": "node sassbuild.js --watch",
-    "serve:manual": "mkdocs serve -a localhost:8081",
     "serve:eleventy": "eleventy --serve",
     "serve": "run-p serve:*",
     "clean": "rimraf _site src/_includes/sass-css"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "asciidoctor": "^2.2.6",
+    "eleventy-plugin-asciidoc": "^2.0.0",
     "eleventy-plugin-seo": "^0.5.2",
     "html-minifier": "^4.0.0",
     "npm-run-all": "^4.1.5",
-    "plums": "stoneface86/plums#v1.2.0",
+    "plums": "stoneface86/plums#v1.3.0",
     "rimraf": "^3.0.2",
     "sass": "^1.55.0"
   }

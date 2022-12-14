@@ -1,5 +1,7 @@
 
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const eleventyAsciidoc = require('eleventy-plugin-asciidoc');
+const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const pluginSeo = require('eleventy-plugin-seo');
 const markdownIt = require("markdown-it");
 const htmlmin = require('html-minifier');
@@ -11,6 +13,13 @@ const nunjucks = require('./src/js/nunjucks');
 module.exports = function(ec) {
 
   ec.addPlugin(EleventyRenderPlugin);
+  ec.addPlugin(eleventyNavigationPlugin);
+  ec.addPlugin(eleventyAsciidoc, {
+    attributes: {
+      relfileprefix: '../',
+      relfilesuffix: '/'
+    }
+  });
   ec.addPlugin(pluginSeo, require('./src/_data/seo.json'));
 
   {
@@ -35,6 +44,8 @@ module.exports = function(ec) {
 
   ec.addFilter('releasedOn', filters.releasedOn);
   ec.addFilter('releaseUrl', filters.releaseUrl);
+  ec.addFilter('breadcrumb', filters.breadcrumb);
+  ec.addFilter('navOfPermalink', filters.navOfPermalink);
 
   if (process.env.SITE_ENV === 'production') {
     console.log('=== PRODUCTION BUILD ===');

@@ -1,0 +1,24 @@
+---
+permalink: /manual/credits/
+layout: layouts/manual.njk
+eleventyNavigation:
+  key: Credits
+  parent: User Manual
+---
+= Credits
+
+The creation of Trackerboy was made possible thanks to contributions from the
+people listed here. If you have contributed and are not listed here but would
+like to be, please let us know!
+
+* *Brennan Ringey* (https://github.com/stoneface86[@stoneface]) - creator, lead developer
+* *Junki Takakura* (https://github.com/jtakakura[@jtakakura])) - contributor
+
+== Artists
+
+The following artists provided Trackerboy modules to be included as [examples](https://github.com/stoneface86/trackerboy/tree/main/examples):
+
+* https://www.youtube.com/channel/UCwvtj4ykDlCH92AhJsRHnMA[forple]
+* https://github.com/sttng[sttng]
+* https://twitter.com/gazanmei[Mēmori Gazán]
+* https://www.youtube.com/@omegabagel8686[omega_bagel]

@@ -1,0 +1,15 @@
+---
+permalink: /manual/interface/history/
+layout: layouts/manual.njk
+eleventyNavigation:
+  key: History
+  parent: Interface
+---
+= History
+:imagesdir: ../../../assets/img/manual
+
+image:interface/history.png[The history dialog]
+
+The history dialog shows the changes you have made to the current song. To
+revert any changes, you can select the action in the list you want to revert
+to.

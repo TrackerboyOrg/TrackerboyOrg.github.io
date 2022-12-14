@@ -32,6 +32,21 @@ module.exports = {
    * @param {string} tag - the input tag name, ie the release's version 
    * @returns {string} the permalink
    */
-  releaseUrl: (tag) => `/downloads/${tag}/`
+  releaseUrl: (tag) => `/downloads/${tag}/`,
+
+  breadcrumb: (permalink) => permalink.slice(1, -2).split('/'),
+
+  navOfPermalink: (permalink) => {
+    const start = permalink.indexOf('/');
+    if (start === 0) {
+      const end = permalink.indexOf('/', 1);
+      if (end !== -1) {
+        return permalink.slice(0, end + 1);
+      } else {
+        return '/';
+      }
+    }
+    return '';
+  }
 
 }

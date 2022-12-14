@@ -1,0 +1,44 @@
+---
+permalink: /manual/
+layout: layouts/manual.njk
+eleventyNavigation:
+  key: User Manual
+---
+= Introduction
+:toc:
+
+Welcome to Trackerboy!
+
+Trackerboy is a cross-platform music tracker for creating Game Boy music. You
+can use this program to create music using the sound hardware of the Game Boy
+and Game Boy Color consoles, with a similar workflow as other popular music
+trackers.
+
+This documentation serves as the user manual for the program, as well as a primer
+on the gameboy sound hardware.
+
+== Quick links
+
+ * xref:manual/interface.adoc[The program's interface]
+ * xref:manual/tracker.adoc[Details about the tracker]
+ * xref:manual/hardware.adoc[A primer on the hardware]
+ * xref:manual/tracker/effect-list.adoc[Effect list]
+ * xref:manual/interface/shortcuts.adoc[Shortcuts]
+ * xref:manual/faq.adoc[Frequently asked questions (FAQ)]
+
+== Contact / Support
+
+If you need help feel free to join the official Trackerboy discord and ask
+your question in the `#help` channel.
+
+You can also contact me via email.
+
+ * **Discord**: https://discord.gg/m6wcAK3
+ * **Website**: https://www.trackerboy.org
+ * **Source code**: https://github.com/stoneface86/trackerboy
+ * **Email**: stoneface8086 @ gmail.com (Please include "trackerboy" in the subject line)
+ * **Twitter**: https://twitter.com/stoneface86[@stoneface86]
+
+== License
+
+Trackerboy is licensed under the https://github.com/stoneface86/trackerboy/blob/main/LICENSE[MIT License]
