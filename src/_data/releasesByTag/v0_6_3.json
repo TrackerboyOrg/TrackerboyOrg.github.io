@@ -1,0 +1,20 @@
+{
+  "version": "v0.6.3",
+  "date": "2023-01-26",
+  "changes": "### Added\n - [#13] - Example modules to be included with each release.\n\n   Thank you to the following authors who provided these modules:\n    - forple\n    - gazanmei\n    - sttng\n    - omega_bagel\n - Effects List dialog (Help > Effects List...)\n - Menu action in Help to open the online user manual (Help > User Manual...)\n - Shortcuts for Effects List and User manual, defaults to F1 and F2, respectively\n\n### Changed\n - Ported from Qt 5 to Qt 6\n - i386/32-bit builds are no longer supported\n - Miniaudio library updated, v0.10.42 -> v0.11.11\n - RtMidi library updated, 4.0.0 -> 5.0.0\n\n### Fixed\n - Bug when hitting enter in the Wave Editor sets the waveform to 50% duty.\n - Elapsed counter in the Audio Diagnostic Dialog updates again.\n\n[#13]: https://github.com/stoneface86/trackerboy/issues/13",
+  "assets": [
+    {
+      "name": "linux64",
+      "github-asset": "trackerboy-v0.6.3-x64-linux.tar.xz"
+    },
+    {
+      "name": "osx64",
+      "github-asset": "trackerboy-v0.6.3-x64-osx.zip"
+    },
+    {
+      "name": "win64",
+      "github-asset": "trackerboy-v0.6.3-x64-windows.zip"
+    }
+  ],
+  "published": true
+}
