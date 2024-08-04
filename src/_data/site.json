@@ -11,7 +11,7 @@
   ],
   "footer": {
     "title": "Trackerboy",
-    "copyright": "Copyright © Brennan Ringey 2019-2022",
+    "copyright": "Copyright © Brennan Ringey 2019-2024",
     "socials": [
       {
         "name": "GitHub",
@@ -20,10 +20,10 @@
         "title": "stoneface86"
       },
       {
-        "name": "Twitter",
-        "iconId": "twitter",
-        "link": "https://twitter.com/stoneface86",
-        "title": "stoneface86"
+        "name": "Bluesky",
+        "iconId": "bluesky",
+        "link": "https://bsky.app/profile/trackerboy.org",
+        "title": "@trackerboy.org"
       }
     ]
   }
